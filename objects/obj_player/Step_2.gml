@@ -13,22 +13,22 @@ switch (self.animation_state)
 		image_speed= 0.0; 
 	break; 
 	case 1: 
-		// north
+		// up
 		sprite_index = spr_player_up
 		image_speed = animation_speed; 
 	break; 
 	case 2: 
-		// east
+		// right
 		sprite_index = spr_player_right
 		image_speed = animation_speed; 
 	break ; 
 	case 3: 
-		// south
+		// down
 		sprite_index = spr_player_down
 		image_speed = animation_speed; 
 	break ; 
 	case 4: 
-		// west
+		// left
 		sprite_index = spr_player_left
 		image_speed = animation_speed; 
 	break ; 

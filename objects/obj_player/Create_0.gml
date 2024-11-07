@@ -4,8 +4,8 @@
 
 self.width = obj_player.sprite_width
 self.height = obj_player.sprite_height
-self.health = 100;
+self.hp = 100;
 self.x_speed = 5; 
 self.y_speed = 5;
 self.points = -100;
-
+self.invulnerable = 0;

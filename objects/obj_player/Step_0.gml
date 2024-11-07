@@ -18,10 +18,35 @@ var space =  keyboard_check_pressed(vk_space);
 if (space)
 {	
 	self.is_Attacking = true; 
-	alarm[0] = attack_Time * room_speed; 
+	alarm[0] = attack_Time * room_speed;
 	show_debug_message("Attack occurred");   
 	// Create an instance 
-	melee_i = instance_create_depth(x+self.width,y,0,obj_melee_attack); 
+	
+	switch(facing) {
+		case 0:
+			image_speed = 0
+        case 1: // UP
+            sprite_index = spr_player_attack_up
+            image_speed = animation_speed
+            break;
+        case 2: // RIGHT
+            sprite_index = spr_player_attack_right
+            image_speed = animation_speed
+            break;
+        case 3: // DOWN
+            sprite_index = spr_player_attack_down
+            image_speed = animation_speed
+			
+            break;
+        case 4: // LEFT
+            sprite_index = spr_player_attack_left
+            image_speed = animation_speed
+            break;
+    }
+    
+    image_index = 0; // Start attack animation from beginning
+    animation_state = facing + 4; // Offset for attack animations
+	instance_create_layer(x, y, "Instances", obj_melee_attack); 
 }
 else if(!is_Attacking )
 {
@@ -56,7 +81,13 @@ else if(!is_Attacking )
 	x += x_Velo; 
 	y += y_Velo	; 
  
- 
+	//collision
+	if (place_meeting(x, y, obj_wall)) 
+	{
+		x -= x_Velo;
+		y -= y_Velo;
+	}
+	
 	// check state of the animation
 	
 	if ( ( down - up == 0) && (right-left == 0 ) ) 
