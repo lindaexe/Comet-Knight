@@ -16,7 +16,6 @@ if (space)
 	self.is_Attacking = true; 
 	alarm[0] = attack_Time * room_speed;
 	show_debug_message("Attack occurred");   
-	// Create an instance 
 	
 	switch(facing) {
 		case 0:
