@@ -2,4 +2,5 @@
 // You can write your code in this editor
 
 // Event to handle alarms
-is_Attacking = false; 
+is_Attacking = false;
+animation_state = 0
