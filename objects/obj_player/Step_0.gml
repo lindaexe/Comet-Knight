@@ -10,6 +10,10 @@ var down = keyboard_check(ord("S"));
 var right = keyboard_check(ord("D")); 
 var space =  keyboard_check_pressed(vk_space); 
 
+
+
+
+
 /* Handle event the player presses space bar */
 if (space)
 {	
