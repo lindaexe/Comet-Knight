@@ -18,7 +18,7 @@
     "name":"obj_character_interface",
     "path":"objects/obj_character_interface/obj_character_interface.yy",
   },
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

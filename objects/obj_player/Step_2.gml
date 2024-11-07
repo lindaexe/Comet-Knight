@@ -3,8 +3,8 @@
 
 // Use end step to react logic that happen on step event
 
-image_xscale = 2; 
-image_yscale = 2 ; 
+image_xscale =self.x_Scale; 
+image_yscale = self.y_Scale; 
 
 switch (self.animation_state)
 {
@@ -33,3 +33,14 @@ switch (self.animation_state)
 		image_speed = animation_speed; 
 	break ; 
 }
+
+// creating our own viewport 
+#region
+
+//halfViewWidth = camera_get_view_width(view_camera[0])/2
+//halfViewHeight =camera_get_view_height(view_camera[0])/2
+
+//camera_set_view_pos(view_camera[0], x - halfViewWidth, y - halfViewHeight)
+
+
+#endregion 
