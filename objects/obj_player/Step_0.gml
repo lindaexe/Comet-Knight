@@ -21,28 +21,6 @@ if (space)
 	alarm[0] = attack_Time * room_speed;
 	show_debug_message("Attack occurred");   
 	// Create an instance 
-	
-	switch(facing) {
-		case 0:
-			image_speed = 0
-        case 1: // UP
-            sprite_index = spr_player_attack_up
-            image_speed = animation_speed
-            break;
-        case 2: // RIGHT
-            sprite_index = spr_player_attack_right
-            image_speed = animation_speed
-            break;
-        case 3: // DOWN
-            sprite_index = spr_player_attack_down
-            image_speed = animation_speed
-			
-            break;
-        case 4: // LEFT
-            sprite_index = spr_player_attack_left
-            image_speed = animation_speed
-            break;
-    }
     
     image_index = 0; // Start attack animation from beginning
     animation_state = facing + 4; // Offset for attack animations
