@@ -8,7 +8,7 @@ if ( !self.isLocked )
 	show_debug_message(targetRoom)
 	room_goto(targetRoom)
 }
-else if ( obj_controller.key_count == 2) 
+else if ( obj_controller.key_count >= 2) 
 {
 	other.x = targetX
 	other.y = targetY 

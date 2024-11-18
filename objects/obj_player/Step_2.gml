@@ -10,7 +10,7 @@ switch (self.animation_state)
 	case 0: 
 		// idle
 		image_speed= 0.0; 
-		switch(facing){
+	switch(facing){
 		case 1: 
 		// north
 			sprite_index = spr_player_up;
@@ -73,16 +73,41 @@ switch (self.animation_state)
 		sprite_index = spr_player_attack_left;
 		image_speed = 1; 
 	break;	
-		
 }
 
-// creating our own viewport 
-#region
+// player is dead self destruct
+if(health <=0)
+{
+	
+	self.isDead = true
+	
+	// play death animation 
+	switch(facing){
+		case 1: 
+		// north
+			sprite_index = spr_player_death_up;
+			image_index = 0;
+			instance_create_depth(self.x,self.y,0, obj_player_dead_up)
+		break; 
+		case 2: 
+		// east
+			sprite_index = spr_player_death_right;
+			image_index = 0; 
+			instance_create_depth(self.x,self.y,0, obj_player_dead_right)
+		break ; 
+		case 3: 
+		// south
+			sprite_index = spr_player_death_down;
+			image_index = 0; 
+			instance_create_depth(self.x,self.y,0, obj_player_dead_down)
+		break ; 
+		case 4: 
+		// west
+			sprite_index = spr_player_death_left;
+			image_index = 0; 
+			instance_create_depth(self.x,self.y,0, obj_player_dead_left)
+		break ; 
+		}
+	instance_destroy(self)
+}
 
-//halfViewWidth = camera_get_view_width(view_camera[0])/2
-//halfViewHeight =camera_get_view_height(view_camera[0])/2
-
-//camera_set_view_pos(view_camera[0], x - halfViewWidth, y - halfViewHeight)
-
-
-#endregion 

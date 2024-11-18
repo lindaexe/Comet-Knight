@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Weapon",
-    "path":"folders/Sprites/Weapon.yy",
+    "name":"spr_player_attacks",
+    "path":"folders/Sprites/Player/spr_player_attacks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

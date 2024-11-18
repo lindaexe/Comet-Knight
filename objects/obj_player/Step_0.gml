@@ -11,11 +11,19 @@ var right = keyboard_check(ord("D"));
 var space =  keyboard_check_pressed(vk_space); 
 
 
+// keyboard check for weapons equiped 
+if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9"))
+{
+	var selection = keyboard_lastchar 
+	weapon_player_select(selection)
+	
+}
+
 
 
 
 /* Handle event the player presses space bar */
-if (space)
+if (space && ds_list_size(obj_controller.players_weapons) !=0 )
 {	
 	self.is_Attacking = true; 
 	alarm[0] = attack_Time * room_speed;
@@ -25,6 +33,7 @@ if (space)
     image_index = 0; // Start attack animation from beginning
     animation_state = facing + 4; // Offset for attack animations
 	instance_create_layer(x, y, "Instances", obj_melee_attack); 
+	audio_play_sound(sfx_sword_slash,3,false)
 }
 else if(!is_Attacking )
 {
@@ -75,6 +84,10 @@ else if(!is_Attacking )
 	}
 	else
 	{
+		// play sound 
+		
+		
+	
 		// we are moving 
 		if (down - up < 0)
 		{
