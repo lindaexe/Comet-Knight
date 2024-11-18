@@ -7,6 +7,7 @@ if (showDialog == false)
 	if (dialog.count() <=0 )
 	{
 		instance_destroy(self)
+		obj_player.can_move = true
 		return; 
 	}
 	current_Dialog = dialog.popDialog(); 

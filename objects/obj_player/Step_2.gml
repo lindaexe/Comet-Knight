@@ -5,6 +5,7 @@
 
 image_xscale =self.x_Scale; 
 image_yscale = self.y_Scale; 
+if(can_move){
 switch (self.animation_state)
 {
 	case 0: 
@@ -73,6 +74,10 @@ switch (self.animation_state)
 		sprite_index = spr_player_attack_left;
 		image_speed = 1; 
 	break;	
+}
+}
+if(!can_move){
+	image_speed= 0.0
 }
 
 // player is dead self destruct

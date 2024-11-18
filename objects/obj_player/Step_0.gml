@@ -12,7 +12,7 @@ var space =  keyboard_check_pressed(vk_space);
 
 
 // keyboard check for weapons equiped 
-if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9"))
+if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9") && can_move)
 {
 	var selection = keyboard_lastchar 
 	weapon_player_select(selection)
@@ -23,7 +23,7 @@ if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9"))
 
 
 /* Handle event the player presses space bar */
-if (space && ds_list_size(obj_controller.players_weapons) !=0 )
+if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 {	
 	
 	// check weapon currently active 
@@ -39,7 +39,6 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 )
     
 		image_index = 0; // Start attack animation from beginning
 		animation_state = facing + 4; // Offset for attack animations
-		instance_create_layer(x, y, "Instances", obj_melee_attack); 
 		audio_play_sound(sfx_sword_slash,3,false)
 		
 		break; 
@@ -51,7 +50,7 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 )
 	}
 	
 }
-else if(!is_Attacking )
+else if(!is_Attacking && can_move)
 {
 	
 	// let allow only direction at a time prevent diagonals 
