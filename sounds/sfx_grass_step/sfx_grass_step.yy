@@ -12,8 +12,8 @@
   "duration":0.743039,
   "name":"sfx_grass_step",
   "parent":{
-    "name":"sfx",
-    "path":"folders/Sounds/sfx.yy",
+    "name":"player_sounds",
+    "path":"folders/Sounds/sfx/player_sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

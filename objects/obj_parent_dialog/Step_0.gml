@@ -2,7 +2,6 @@
 // You can write your code in this editor
 
 
-// if false pop dialog to get the next one from the list if no more destroy the instance 
 if (showDialog == false)
 {
 	if (dialog.count() <=0 )

@@ -6,6 +6,7 @@
   "name":"obj_collect_gun",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_interface","path":"objects/obj_item_interface/obj_item_interface.yy",},"propertyId":{"name":"item_type","path":"objects/obj_item_interface/obj_item_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"WEAPONS.GUN",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_interface","path":"objects/obj_item_interface/obj_item_interface.yy",},"propertyId":{"name":"spawn_asset","path":"objects/obj_item_interface/obj_item_interface.yy",},"resource":{"name":"obj_gun_found_dialog","path":"objects/obj_gun_found_dialog/obj_gun_found_dialog.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_gun_found_dialog",},
   ],
   "parent":{
     "name":"items",

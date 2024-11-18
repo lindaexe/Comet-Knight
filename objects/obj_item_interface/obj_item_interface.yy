@@ -33,6 +33,8 @@
     {"$GMObjectProperty":"v1","%Name":"isUp","filters":[],"listItems":[],"multiselect":false,"name":"isUp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"triggered","filters":[],"listItems":[],"multiselect":false,"name":"triggered","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"delay","filters":[],"listItems":[],"multiselect":false,"name":"delay","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"spawn_asset","filters":[],"listItems":[],"multiselect":false,"name":"spawn_asset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"sound_play","filters":[],"listItems":[],"multiselect":false,"name":"sound_play","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

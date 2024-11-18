@@ -25,15 +25,31 @@ if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9"))
 /* Handle event the player presses space bar */
 if (space && ds_list_size(obj_controller.players_weapons) !=0 )
 {	
-	self.is_Attacking = true; 
-	alarm[0] = attack_Time * room_speed;
-	show_debug_message("Attack occurred");   
-	// Create an instance 
+	
+	// check weapon currently active 
+	var activeWeapon = obj_controller.weapon_selected
+	switch(activeWeapon)
+	{
+		case WEAPONS.SWORD:
+		
+		self.is_Attacking = true; 
+		alarm[0] = attack_Time * room_speed;
+		show_debug_message("Attack occurred");   
+		// Create an instance 
     
-    image_index = 0; // Start attack animation from beginning
-    animation_state = facing + 4; // Offset for attack animations
-	instance_create_layer(x, y, "Instances", obj_melee_attack); 
-	audio_play_sound(sfx_sword_slash,3,false)
+		image_index = 0; // Start attack animation from beginning
+		animation_state = facing + 4; // Offset for attack animations
+		instance_create_layer(x, y, "Instances", obj_melee_attack); 
+		audio_play_sound(sfx_sword_slash,3,false)
+		
+		break; 
+		case WEAPONS.GUN: 
+	
+		break; 
+		case WEAPONS.MINE: 
+		break; 
+	}
+	
 }
 else if(!is_Attacking )
 {

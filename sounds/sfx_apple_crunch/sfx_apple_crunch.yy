@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sfx_slime_hit",
+  "%Name":"sfx_apple_crunch",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.743039,
-  "name":"sfx_slime_hit",
+  "duration":0.817868,
+  "name":"sfx_apple_crunch",
   "parent":{
-    "name":"enemy_hit_sounds",
-    "path":"folders/Sounds/sfx/enemy_hit_sounds.yy",
+    "name":"item_sounds",
+    "path":"folders/Sounds/sfx/item_sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_slime_hit.wav",
+  "soundFile":"sfx_apple_crunch.ogg",
   "type":0,
   "volume":1.0,
 }

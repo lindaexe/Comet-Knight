@@ -12,8 +12,8 @@
   "duration":0.761497,
   "name":"sfx_sword_slash",
   "parent":{
-    "name":"sfx",
-    "path":"folders/Sounds/sfx.yy",
+    "name":"sword_sounds",
+    "path":"folders/Sounds/sfx/sword_sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

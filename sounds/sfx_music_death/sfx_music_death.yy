@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sfx_slime_hit",
+  "%Name":"sfx_music_death",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.743039,
-  "name":"sfx_slime_hit",
+  "duration":1.486077,
+  "name":"sfx_music_death",
   "parent":{
-    "name":"enemy_hit_sounds",
-    "path":"folders/Sounds/sfx/enemy_hit_sounds.yy",
+    "name":"music",
+    "path":"folders/Sounds/music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_slime_hit.wav",
+  "soundFile":"sfx_music_death.wav",
   "type":0,
   "volume":1.0,
 }

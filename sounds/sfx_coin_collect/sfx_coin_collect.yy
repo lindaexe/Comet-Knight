@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sfx_slime_hit",
+  "%Name":"sfx_coin_collect",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.743039,
-  "name":"sfx_slime_hit",
+  "duration":0.35542,
+  "name":"sfx_coin_collect",
   "parent":{
-    "name":"enemy_hit_sounds",
-    "path":"folders/Sounds/sfx/enemy_hit_sounds.yy",
+    "name":"item_sounds",
+    "path":"folders/Sounds/sfx/item_sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_slime_hit.wav",
+  "soundFile":"sfx_coin_collect.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.3,
 }

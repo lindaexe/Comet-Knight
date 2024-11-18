@@ -26,14 +26,14 @@ if (showDialog)
 	draw_set_alpha(alpha)
 	
 	draw_set_color(c_black)
-	draw_rectangle(border, border + 650 , display_get_gui_width() - border, strLength - border + 650, false)
+	draw_rectangle(border, border + 650 , display_get_gui_width() - border, strLength - border + 700, false)
 	
 	// make sure sprite exists
 	if (current_Dialog.npc_img != -1)
 	{
 		draw_sprite(current_Dialog.npc_img , 0, border * 3 , border + 650)
 		draw_set_color(c_white)
-		draw_text_ext(txt_x + 650, txt_y + 650, current_Dialog.npc_msg, 16, display_get_gui_width() - 192) 
+		draw_text_ext(txt_x , txt_y + 650, current_Dialog.npc_msg + "\nPress [SHIFT] to continue...", 16, display_get_gui_width() - 192) 
 	}
 	
 	alpha = lerp(alpha, 1 , 0.06)

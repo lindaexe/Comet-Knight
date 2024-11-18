@@ -108,6 +108,7 @@ if(health <=0)
 			instance_create_depth(self.x,self.y,0, obj_player_dead_left)
 		break ; 
 		}
+	audio_play_sound(sfx_music_death,8,false)
 	instance_destroy(self)
 }
 

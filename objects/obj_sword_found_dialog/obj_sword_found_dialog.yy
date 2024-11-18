@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_parent_dialog",
+  "%Name":"obj_sword_found_dialog",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_parent_dialog",
+  "name":"obj_sword_found_dialog",
   "overriddenProperties":[],
   "parent":{
     "name":"dialog",
     "path":"folders/Objects/dialog.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_parent_dialog",
+    "path":"objects/obj_parent_dialog/obj_parent_dialog.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite64",
+    "path":"sprites/Sprite64/Sprite64.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

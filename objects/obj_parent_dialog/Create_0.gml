@@ -3,7 +3,7 @@
 
 dialog = new DialogueObj() // instance 
 
-currKey = vk_anykey
+currKey = vk_shift
 
 showDialog = false; 
 

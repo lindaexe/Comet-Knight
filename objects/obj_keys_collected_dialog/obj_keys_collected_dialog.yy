@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_child_dialog",
+  "%Name":"obj_keys_collected_dialog",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_child_dialog",
+  "name":"obj_keys_collected_dialog",
   "overriddenProperties":[],
   "parent":{
     "name":"dialog",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialog",
-    "path":"sprites/spr_dialog/spr_dialog.yy",
+    "name":"Sprite64",
+    "path":"sprites/Sprite64/Sprite64.yy",
   },
   "spriteMaskId":null,
   "visible":true,
