@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"Space_Knight",
+  "%Name":"Comet Knight",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -58,7 +58,7 @@
   "MetaData":{
     "IDEVersion":"2024.6.2.162",
   },
-  "name":"Space_Knight",
+  "name":"Comet Knight",
   "resources":[
     {"id":{"name":"enemy_sample","path":"objects/enemy_sample/enemy_sample.yy",},},
     {"id":{"name":"obj_blue_bullet","path":"objects/obj_blue_bullet/obj_blue_bullet.yy",},},
@@ -73,7 +73,7 @@
     {"id":{"name":"obj_collect_coin","path":"objects/obj_collect_coin/obj_collect_coin.yy",},},
     {"id":{"name":"obj_collect_gun","path":"objects/obj_collect_gun/obj_collect_gun.yy",},},
     {"id":{"name":"obj_collect_sword","path":"objects/obj_collect_sword/obj_collect_sword.yy",},},
-    {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
+    {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_corner1","path":"objects/obj_corner1/obj_corner1.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
@@ -171,11 +171,11 @@
     {"id":{"name":"spr_player_death_left","path":"sprites/spr_player_death_left/spr_player_death_left.yy",},},
     {"id":{"name":"spr_player_death_right","path":"sprites/spr_player_death_right/spr_player_death_right.yy",},},
     {"id":{"name":"spr_player_death_up","path":"sprites/spr_player_death_up/spr_player_death_up.yy",},},
-    {"id":{"name":"spr_player_down","path":"sprites/spr_player_down/spr_player_down.yy",},},
     {"id":{"name":"spr_player_head","path":"sprites/spr_player_head/spr_player_head.yy",},},
-    {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},},
-    {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},},
-    {"id":{"name":"spr_player_up","path":"sprites/spr_player_up/spr_player_up.yy",},},
+    {"id":{"name":"spr_player_walk_down","path":"sprites/spr_player_walk_down/spr_player_walk_down.yy",},},
+    {"id":{"name":"spr_player_walk_left","path":"sprites/spr_player_walk_left/spr_player_walk_left.yy",},},
+    {"id":{"name":"spr_player_walk_right","path":"sprites/spr_player_walk_right/spr_player_walk_right.yy",},},
+    {"id":{"name":"spr_player_walk_up","path":"sprites/spr_player_walk_up/spr_player_walk_up.yy",},},
     {"id":{"name":"spr_right_door_frame","path":"sprites/spr_right_door_frame/spr_right_door_frame.yy",},},
     {"id":{"name":"spr_sample_enemy","path":"sprites/spr_sample_enemy/spr_sample_enemy.yy",},},
     {"id":{"name":"spr_select_sq_ac","path":"sprites/spr_select_sq_ac/spr_select_sq_ac.yy",},},
