@@ -73,7 +73,31 @@ switch (self.animation_state)
 	// left attack
 		sprite_index = spr_player_attack_left;
 		image_speed = 1; 
-	break;	
+	break;
+	case 9:
+	// up attack
+		
+		sprite_index = spr_shoot_up
+		image_speed = 1; 
+	break;
+	case 10:
+	// right attack
+		
+		sprite_index = spr_shoot_right;
+		image_speed = 1; 
+	break;
+	case 11:
+	// down attack
+		
+		sprite_index = spr_shoot_down;
+		image_speed = 1; 
+	break;
+	case 12:
+	// left attack
+		
+		sprite_index = spr_shoot_left;
+		image_speed = 1; 
+	break;
 }
 }
 if(!can_move){

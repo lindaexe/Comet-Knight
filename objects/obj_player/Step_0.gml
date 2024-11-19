@@ -35,18 +35,52 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 		self.is_Attacking = true; 
 		alarm[0] = attack_Time * room_speed;
 		show_debug_message("Attack occurred");   
-		// Create an instance 
-    
+		
+   
 		image_index = 0; // Start attack animation from beginning
 		animation_state = facing + 4; // Offset for attack animations
 		audio_play_sound(sfx_sword_slash,3,false)
 		
 		break; 
 		case WEAPONS.GUN: 
-	
-		break; 
+		self.is_Attacking = true; 
+		alarm[0] = attack_Time * room_speed;
+		show_debug_message("Attack occurred");   
+		switch (self.facing){
+		case 1:
+	// up attack
+		var bullet = instance_create_layer(x,y,"Instances",obj_bullet_up)
+		bullet.vspeed = -5
+		 
+	break;
+	case 2:
+	// right attack
+	var bullet = instance_create_layer(x,y+10,"Instances",obj_bullet_right)
+		bullet.hspeed = 5
+		
+	break;
+	case 3:
+	// down attack
+var bullet = instance_create_layer(x,y,"Instances",obj_bullet_down)
+		bullet.vspeed = 5
+		 
+	break;
+	case 4:
+	// left attack
+	var bullet = instance_create_layer(x,y+10,"Instances",obj_bullet_left)
+		bullet.hspeed = -5
+		
+   break; 
+		
+		 
+		}
+		image_index = 0; // Start attack animation from beginning
+		animation_state = facing + 8; // Offset for attack animations
+		audio_play_sound(sfx_lazer_shot_Clean,3,false)
+		break;
 		case WEAPONS.MINE: 
-		break; 
+		break;
+		
 	}
 	
 }

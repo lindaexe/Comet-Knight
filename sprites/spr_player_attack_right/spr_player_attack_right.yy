@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"spr_player_attacks",
-    "path":"folders/Sprites/Player/spr_player_attacks.yy",
+    "name":"player_sword",
+    "path":"folders/Sprites/Player/player_sword.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

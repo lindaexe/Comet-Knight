@@ -42,6 +42,7 @@
     {"$GMObjectProperty":"v1","%Name":"walk_sound","filters":[],"listItems":[],"multiselect":false,"name":"walk_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sfx_grass_step","path":"sounds/sfx_grass_step/sfx_grass_step.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sfx_grass_step","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"step_time","filters":[],"listItems":[],"multiselect":false,"name":"step_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"isDead","filters":[],"listItems":[],"multiselect":false,"name":"isDead","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"can_move","filters":[],"listItems":[],"multiselect":false,"name":"can_move","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
