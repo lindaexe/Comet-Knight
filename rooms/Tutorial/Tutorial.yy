@@ -73,6 +73,7 @@
     {"name":"inst_3BFFDB69","path":"rooms/Tutorial/Tutorial.yy",},
     {"name":"inst_436A990D","path":"rooms/Tutorial/Tutorial.yy",},
     {"name":"inst_60FF8543","path":"rooms/Tutorial/Tutorial.yy",},
+    {"name":"inst_CEE275","path":"rooms/Tutorial/Tutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -183,6 +184,7 @@
         {"$GMRInstance":"v1","%Name":"inst_75E19135","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75E19135","objectId":{"name":"obj_collect_apple","path":"objects/obj_collect_apple/obj_collect_apple.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":472.0,"y":512.0,},
         {"$GMRInstance":"v1","%Name":"inst_3BFFDB69","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3BFFDB69","objectId":{"name":"obj_collect_apple","path":"objects/obj_collect_apple/obj_collect_apple.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":423.0,"y":277.0,},
         {"$GMRInstance":"v1","%Name":"inst_436A990D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_436A990D","objectId":{"name":"obj_collect_apple","path":"objects/obj_collect_apple/obj_collect_apple.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1166.0,"y":759.0,},
+        {"$GMRInstance":"v1","%Name":"inst_CEE275","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_CEE275","objectId":{"name":"obj_collect_gun","path":"objects/obj_collect_gun/obj_collect_gun.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":731.0,"y":1671.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"foilage_layer","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"foilage_layer","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":120,"SerialiseWidth":90,"TileCompressedData":[
           -1992,-2147483648,1,0,-6928,-2147483648,2,83,84,-88,-2147483648,2,101,102,-490,-2147483648,2,83,84,-88,
