@@ -6,10 +6,12 @@ if (showDialog == false)
 {
 	if (dialog.count() <=0 )
 	{
+		obj_player.can_move = true; 
 		instance_destroy(self)
 		obj_player.can_move = true
 		return; 
 	}
+	obj_player.can_move = false; 
 	current_Dialog = dialog.popDialog(); 
 	showDialog = true; 
 } 

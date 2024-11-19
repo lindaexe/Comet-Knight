@@ -13,8 +13,8 @@
     "path":"folders/Objects/Environment.yy",
   },
   "parentObjectId":{
-    "name":"obj_wall",
-    "path":"objects/obj_wall/obj_wall.yy",
+    "name":"obj_collidable",
+    "path":"objects/obj_collidable/obj_collidable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -19,9 +19,6 @@ if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9") && can_move)
 	
 }
 
-
-
-
 /* Handle event the player presses space bar */
 if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 {	
@@ -86,7 +83,7 @@ var bullet = instance_create_layer(x,y,"Instances",obj_bullet_down)
 }
 else if(!is_Attacking && can_move)
 {
-	
+	// prevent diagonals 
 	// let allow only direction at a time prevent diagonals 
 	if ( right && up )
 	{
@@ -109,23 +106,49 @@ else if(!is_Attacking && can_move)
 		down = false; 
 	}
 	
-	// Turn input into velolcity,  cancel out opposing inputs  
-	x_Velo = (right-left) * x_speed; 
-	y_Velo = (down-up) * y_speed; 
-
-	// apply velocity to player postion
-	x += x_Velo; 
-	y += y_Velo	; 
- 
-	//collision
-	if (place_meeting(x, y, obj_wall)) 
+	xVelocity = (right - left ) * walkSpeed
+	yVelocity = (down - up ) * walkSpeed
+	
+	var predictedX = x + xVelocity 
+	var predictedY = y + yVelocity 
+	
+	// if not touching why on X cordinate move otherwise phase out 1 pixel
+	if (!place_meeting(predictedX, y, obj_collidable))
 	{
-		x -= x_Velo;
-		y -= y_Velo;
+		x += xVelocity
+	}
+	else
+	{
+		
+		predictedX = x;
+		// loop till phased out 
+		while (!place_meeting(predictedX,y, obj_collidable))
+		{
+			
+			predictedX += sign(xVelocity)
+		}
+		
+		x = predictedX - sign(xVelocity)  // one pixel away
 	}
 	
-	// check state of the animation
+	// if not touching on Y cordinate move otherwise phase out 1 pixel
+	if ( !place_meeting(x, predictedY, obj_collidable) )
+	{
+		y += yVelocity
+	}
+	else
+	{
+		predictedY = y;
+		// loop till phased out
+		while ( !place_meeting(x,predictedY, obj_collidable) )
+		{
+			predictedY += sign(yVelocity);
+		}
+		y = predictedY - sign(yVelocity); // one pixel away
+	}
 	
+
+	// check state of the animation
 	if ( ( down - up == 0) && (right-left == 0 ) ) 
 	{
 		// idle state 
@@ -133,10 +156,6 @@ else if(!is_Attacking && can_move)
 	}
 	else
 	{
-		// play sound 
-		
-		
-	
 		// we are moving 
 		if (down - up < 0)
 		{
@@ -158,9 +177,6 @@ else if(!is_Attacking && can_move)
 		{
 			animation_state = 2  //right
 			facing = 2
-		}
-		
-		
+		}		
 	}
- 
 } 
