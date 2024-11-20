@@ -12,7 +12,7 @@ var space =  keyboard_check_pressed(vk_space);
 
 
 // keyboard check for weapons equiped 
-if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9") && can_move)
+if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9") && can_move )
 {
 	var selection = keyboard_lastchar 
 	weapon_player_select(selection)
@@ -25,23 +25,48 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 	
 	// check weapon currently active 
 	var activeWeapon = obj_controller.weapon_selected
+	
 	switch(activeWeapon)
 	{
 		case WEAPONS.SWORD:
 		
 		self.is_Attacking = true; 
-		alarm[0] = attack_Time * room_speed;
+		alarm[0] = attack_Time *  game_get_speed( gamespeed_fps) ;
 		show_debug_message("Attack occurred");   
-		
-   
+		var offsetX = x
+		var offsetY = y
+		var angle = 0; 
+		// check facing 
+	
+		switch(self.facing)
+		{
+			case 1:  // up
+				offsetY = y - weaponOffset
+				angle = 90 
+			break;
+			case 2:  // right
+				offsetX =  x + weaponOffset - 3
+				offsetY += 7
+			break ; 
+			case 3: // down
+				offsetY = y + weaponOffset
+				angle = 90
+			break ; 
+			case 4: // left
+				offsetX = x - weaponOffset  + 3
+				offsetY += 7
+			break ; 
+			
+		}
 		image_index = 0; // Start attack animation from beginning
 		animation_state = facing + 4; // Offset for attack animations
 		audio_play_sound(sfx_sword_slash,3,false)
-		
+		var sword_proj = instance_create_layer(offsetX,offsetY,"collision_layer",obj_sword_projectile)
+		sword_proj.image_angle = angle
 		break; 
 		case WEAPONS.GUN: 
 		self.is_Attacking = true; 
-		alarm[0] = attack_Time * room_speed;
+		alarm[0] = attack_Time *  game_get_speed( gamespeed_fps) ;
 		show_debug_message("Attack occurred");   
 		switch (self.facing){
 		case 1:
@@ -58,7 +83,7 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 	break;
 	case 3:
 	// down attack
-var bullet = instance_create_layer(x,y,"Instances",obj_bullet_down)
+	var bullet = instance_create_layer(x,y,"Instances",obj_bullet_down)
 		bullet.vspeed = 5
 		 
 	break;

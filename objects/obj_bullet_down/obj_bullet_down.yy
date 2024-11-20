@@ -6,8 +6,8 @@
   "name":"obj_bullet_down",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weapon",
-    "path":"folders/Objects/Weapon.yy",
+    "name":"player_bullets",
+    "path":"folders/Objects/player_bullets.yy",
   },
   "parentObjectId":{
     "name":"obj_bullet_right",

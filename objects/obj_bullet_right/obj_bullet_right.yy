@@ -6,12 +6,17 @@
   ],
   "managed":true,
   "name":"obj_bullet_right",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"propertyId":{"name":"damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+  ],
   "parent":{
-    "name":"Weapon",
-    "path":"folders/Objects/Weapon.yy",
+    "name":"player_bullets",
+    "path":"folders/Objects/player_bullets.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_parent_damage",
+    "path":"objects/obj_parent_damage/obj_parent_damage.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

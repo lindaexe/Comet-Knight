@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bullet_left",
+  "%Name":"obj_damage_interface",
   "eventList":[],
   "managed":true,
-  "name":"obj_bullet_left",
+  "name":"obj_damage_interface",
   "overriddenProperties":[],
   "parent":{
-    "name":"player_bullets",
-    "path":"folders/Objects/player_bullets.yy",
+    "name":"enemy",
+    "path":"folders/Objects/enemy.yy",
   },
-  "parentObjectId":{
-    "name":"obj_bullet_right",
-    "path":"objects/obj_bullet_right/obj_bullet_right.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_bullet_left",
-    "path":"sprites/spr_bullet_left/spr_bullet_left.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

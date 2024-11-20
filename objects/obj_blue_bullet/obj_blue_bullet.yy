@@ -9,8 +9,8 @@
   "name":"obj_blue_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weapon",
-    "path":"folders/Objects/Weapon.yy",
+    "name":"player_bullets",
+    "path":"folders/Objects/player_bullets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
