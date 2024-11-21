@@ -43,6 +43,7 @@ attack_cooldown_max = room_speed * 2; // Attack every 2 seconds
 flash = false;
 flash_duration = 3;
 flash_alpha = 0;
+flash_color = c_white;
 
 hurt_cooldown = 0;
 hurt_cooldown_max = 15; // Frames of invincibility after being hit

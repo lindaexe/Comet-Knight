@@ -119,6 +119,7 @@ switch(state) {
     case SlimeState.HURT:
         x_speed = 0;
         y_speed = 0;
+		flash = true;
         break;
         
     case SlimeState.DEAD:

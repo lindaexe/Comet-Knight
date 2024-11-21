@@ -11,6 +11,7 @@ var right = keyboard_check(ord("D"));
 var space =  keyboard_check_pressed(vk_space); 
 
 
+
 // keyboard check for weapons equiped 
 if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9") && can_move )
 {
@@ -18,6 +19,28 @@ if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9") && can_move )
 	weapon_player_select(selection)
 	
 }
+
+//Decrease invulnerability 
+if (invulnerable > 0)
+{
+	invulnerable--;
+}
+
+// Flashes player when step on spike
+if(place_meeting(x,y,obj_spike))
+{
+	if(!flash){
+		flash = true;
+		flash_alpha = 1;
+		alarm[2] = room_speed;
+	}
+}
+
+if(flash_alpha > 0)
+{
+	flash_alpha -= 0.05;
+}
+
 
 /* Handle event the player presses space bar */
 if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)

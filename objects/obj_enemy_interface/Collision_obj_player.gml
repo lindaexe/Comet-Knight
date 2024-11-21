@@ -7,6 +7,7 @@ if (self.hasHit)
 	health -= 20
 	show_debug_message("player hit")
 	self.hasHit = false; 
+	
 }
 else
 {
