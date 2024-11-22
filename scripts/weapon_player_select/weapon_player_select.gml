@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function weapon_player_select( selection )
+function weapon_player_select( selection,sound)
 {
 	
 	// check if selection is even allowed 
@@ -13,8 +13,12 @@ function weapon_player_select( selection )
 		switch(item)
 		{
 			case WEAPONS.SWORD:
-			show_debug_message("Sword selected")
+			show_debug_message("Sword selected")			
 			obj_controller.weapon_selected = WEAPONS.SWORD
+			if(sound)
+			{
+				audio_play_sound(sfx_equip_sword,1,false)	
+			}
 			break; 
 			case WEAPONS.GUN:
 			obj_controller.weapon_selected = WEAPONS.GUN

@@ -43,7 +43,8 @@ if(!ds_list_empty(self.players_weapons))
 			if (self.weapon_selected == WEAPONS.SWORD)
 			{
 				draw_sprite(spr_select_sq_ac, 0 ,self.inventory_xCord  +( padding *i),inventory_yCord);
-			} 
+			}
+		
 				draw_set_alpha(1)
 				draw_sprite(spr_display_sword, 0 ,self.inventory_xCord  +( padding *i),inventory_yCord); 
 			break;
@@ -51,7 +52,8 @@ if(!ds_list_empty(self.players_weapons))
 			if (self.weapon_selected == WEAPONS.GUN)
 			{
 				draw_sprite(spr_select_sq_ac, 0 ,self.inventory_xCord  +( padding *i),inventory_yCord);
-			} 
+			}
+			
 				draw_set_alpha(1)
 				draw_sprite(spr_display_gun, 0 ,self.inventory_xCord  +( padding *i),inventory_yCord);
 				
@@ -64,7 +66,6 @@ if(!ds_list_empty(self.players_weapons))
 				draw_set_alpha(1)
 				draw_sprite(spr_sword, 0 ,self.inventory_xCord  +( padding *i),inventory_yCord);
 			break;
-
 		}
 	}
 }

@@ -43,6 +43,7 @@
     {"$GMObjectProperty":"v1","%Name":"key_yCord","filters":[],"listItems":[],"multiselect":false,"name":"key_yCord","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"40","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"key_xCord","filters":[],"listItems":[],"multiselect":false,"name":"key_xCord","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"285","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"hasTriggered","filters":[],"listItems":[],"multiselect":false,"name":"hasTriggered","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"selectSound","filters":[],"listItems":[],"multiselect":false,"name":"selectSound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

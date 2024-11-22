@@ -6,8 +6,8 @@
   "name":"obj_floor_tile1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Inside",
+    "path":"folders/Objects/Environment/Inside.yy",
   },
   "parentObjectId":null,
   "persistent":false,

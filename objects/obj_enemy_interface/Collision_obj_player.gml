@@ -3,9 +3,10 @@
 
 //if player steps on spike or touches slime 
 if (self.hasHit) {
-	    health -= 20
+	    health -= self.damage
 		show_debug_message("player_hit");
 		self.hasHit = false
+		other.isHurt = true
 	}else{
 		alarm[0] = delay * game_get_speed(gamespeed_fps);	
 }

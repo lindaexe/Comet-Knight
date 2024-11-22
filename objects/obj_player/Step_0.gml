@@ -11,14 +11,35 @@ var right = keyboard_check(ord("D"));
 var space =  keyboard_check_pressed(vk_space); 
 
 
+// check collistion 
+if(place_meeting(x,y,obj_enemy_interface) )
+{
+	if (collision){ 
+		audio_play_sound(sfx_player_hit,3, false)
+		collision = false;
+	}
+}
+else
+{
+	collision = true
+}
 
 // keyboard check for weapons equiped 
 if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9") && can_move )
 {
-	var selection = keyboard_lastchar 
-	weapon_player_select(selection)
-	
+	var selection = keyboard_lastchar
+	if (self.selectionSound)
+	{ 
+		weapon_player_select(selection, selectionSound)
+		self.selectionSound = false; 
+	}
 }
+else
+{
+	self.selectionSound = true;
+}
+
+keyboard_lastkey = noone
 
 //Decrease invulnerability 
 if (invulnerable > 0)
@@ -62,8 +83,8 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 		var offsetX = x
 		var offsetY = y
 		var angle = 0; 
+		
 		// check facing 
-	
 		switch(self.facing)
 		{
 			case 1:  // up

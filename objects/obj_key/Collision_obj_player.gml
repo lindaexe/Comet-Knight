@@ -6,5 +6,5 @@
 obj_controller.key_count += 1
 show_debug_message(obj_controller.key_count)
 self.persistent = false
-audio_play_sound(sfx_power_up,5,false)
+audio_play_sound(sfx_key_collect,4,false)
 instance_destroy(self); 
