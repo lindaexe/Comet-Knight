@@ -96,6 +96,7 @@
     {"id":{"name":"obj_floor_tile3","path":"objects/obj_floor_tile3/obj_floor_tile3.yy",},},
     {"id":{"name":"obj_floor_tile4","path":"objects/obj_floor_tile4/obj_floor_tile4.yy",},},
     {"id":{"name":"obj_gun_found_dialog","path":"objects/obj_gun_found_dialog/obj_gun_found_dialog.yy",},},
+    {"id":{"name":"obj_health_dialog","path":"objects/obj_health_dialog/obj_health_dialog.yy",},},
     {"id":{"name":"obj_item_interface","path":"objects/obj_item_interface/obj_item_interface.yy",},},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},},
     {"id":{"name":"obj_keys_collected_dialog","path":"objects/obj_keys_collected_dialog/obj_keys_collected_dialog.yy",},},
