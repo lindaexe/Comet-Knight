@@ -27,7 +27,7 @@ if (invulnerable > 0)
 }
 
 // Flashes player when damaged by spike or slime
-if(place_meeting(x,y,obj_spike) || place_meeting(x,y,obj_slime))
+if(place_meeting(x,y,obj_spike) || place_meeting(x,y,obj_slime) || place_meeting(x,y,obj_turret_bullet))
 {
 	if(!flash){
 		health -= 20
@@ -36,6 +36,8 @@ if(place_meeting(x,y,obj_spike) || place_meeting(x,y,obj_slime))
 		alarm[2] = room_speed;
 	}
 }
+
+
 
 if(flash_alpha > 0)
 {

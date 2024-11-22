@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_spike",
-  "eventList":[],
+  "%Name":"obj_turret_bullet",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_spike",
+  "name":"obj_turret_bullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Obstacles",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spike",
-    "path":"sprites/spr_spike/spr_spike.yy",
+    "name":"spr_turret_bullet",
+    "path":"sprites/spr_turret_bullet/spr_turret_bullet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
