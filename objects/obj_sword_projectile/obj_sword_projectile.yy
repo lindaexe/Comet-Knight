@@ -37,10 +37,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
+  "spriteId":null,
+  "spriteMaskId":{
     "name":"spr_sword_place_holder",
     "path":"sprites/spr_sword_place_holder/spr_sword_place_holder.yy",
   },
-  "spriteMaskId":null,
   "visible":true,
 }
