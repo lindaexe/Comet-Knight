@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_spike",
+  "%Name":"obj_damage_enemy",
   "eventList":[],
   "managed":true,
-  "name":"obj_spike",
+  "name":"obj_damage_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemy",
+    "path":"folders/Objects/enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_spike",
-    "path":"sprites/spr_spike/spr_spike.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

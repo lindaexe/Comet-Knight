@@ -10,8 +10,8 @@
     "path":"folders/Objects/player_bullets.yy",
   },
   "parentObjectId":{
-    "name":"obj_bullet_right",
-    "path":"objects/obj_bullet_right/obj_bullet_right.yy",
+    "name":"obj_parent_damage",
+    "path":"objects/obj_parent_damage/obj_parent_damage.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

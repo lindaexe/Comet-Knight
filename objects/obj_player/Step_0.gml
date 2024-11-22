@@ -26,10 +26,11 @@ if (invulnerable > 0)
 	invulnerable--;
 }
 
-// Flashes player when step on spike
-if(place_meeting(x,y,obj_spike))
+// Flashes player when damaged by spike or slime
+if(place_meeting(x,y,obj_spike) || place_meeting(x,y,obj_slime))
 {
 	if(!flash){
+		health -= 20
 		flash = true;
 		flash_alpha = 1;
 		alarm[2] = room_speed;
