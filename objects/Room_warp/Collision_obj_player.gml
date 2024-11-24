@@ -3,6 +3,7 @@
 
 if ( !self.isLocked ) 
 { 
+	
 	other.x = targetX
 	other.y = targetY 
 	show_debug_message(targetRoom)
@@ -10,6 +11,7 @@ if ( !self.isLocked )
 }
 else if ( obj_controller.key_count >= key_limit) 
 {
+	
 	other.x = targetX
 	other.y = targetY 
 	show_debug_message(targetRoom)

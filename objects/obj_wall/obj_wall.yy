@@ -6,8 +6,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Inside",
+    "path":"folders/Objects/Environment/Inside.yy",
   },
   "parentObjectId":{
     "name":"obj_collidable",
