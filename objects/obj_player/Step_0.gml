@@ -178,8 +178,8 @@ else if(!is_Attacking && can_move)
 		down = false; 
 	}
 	
-	xVelocity = (right - left ) * walkSpeed
-	yVelocity = (down - up ) * walkSpeed
+	xVelocity = (right - left ) * walkSpeedX
+	yVelocity = (down - up ) * walkSpeedY
 	
 	var predictedX = x + xVelocity 
 	var predictedY = y + yVelocity 

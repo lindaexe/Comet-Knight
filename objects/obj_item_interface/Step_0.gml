@@ -20,7 +20,7 @@ if (!triggered)
 
 // also check if already collected 
 
-if (ds_list_size( obj_controller.players_weapons) > 0 && self.item_type == WEAPONS.GUN 
+if ( instance_exists(obj_controller) &&  ds_list_size( obj_controller.players_weapons) > 0 && self.item_type == WEAPONS.GUN 
 || self.item_type == WEAPONS.MINE  || self.item_type == WEAPONS.SWORD)
 {
 	for (var i =0; i < ds_list_size(obj_controller.players_weapons); ++i)

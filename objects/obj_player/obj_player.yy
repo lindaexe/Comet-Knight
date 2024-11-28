@@ -17,6 +17,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_character_interface","path":"objects/obj_character_interface/obj_character_interface.yy",},"propertyId":{"name":"xVelocity","path":"objects/obj_character_interface/obj_character_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_character_interface","path":"objects/obj_character_interface/obj_character_interface.yy",},"propertyId":{"name":"yVelocity","path":"objects/obj_character_interface/obj_character_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_character_interface","path":"objects/obj_character_interface/obj_character_interface.yy",},"propertyId":{"name":"x_Scale","path":"objects/obj_character_interface/obj_character_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
   ],
   "parent":{
     "name":"Objects",
@@ -41,7 +42,8 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"player_state","filters":[],"listItems":[],"multiselect":false,"name":"player_state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"walkSpeed","filters":[],"listItems":[],"multiselect":false,"name":"walkSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"walkSpeedX","filters":[],"listItems":[],"multiselect":false,"name":"walkSpeedX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3.90","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"walkSpeedY","filters":[],"listItems":[],"multiselect":false,"name":"walkSpeedY","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3.65","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"is_Attacking","filters":[],"listItems":[],"multiselect":false,"name":"is_Attacking","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"attack_Time","filters":[],"listItems":[],"multiselect":false,"name":"attack_Time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.25","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"facing","filters":[],"listItems":[],"multiselect":false,"name":"facing","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
