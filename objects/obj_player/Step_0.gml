@@ -47,14 +47,14 @@ if (invulnerable > 0)
 	invulnerable--;
 }
 
-// Flashes player when damaged by spike or slime
+// Flashes player use the interface instead in this case 
 if(place_meeting(x,y,obj_spike) || place_meeting(x,y,obj_slime) || place_meeting(x,y,obj_turret_bullet))
 {
 	if(!flash){
 		health -= 20
 		flash = true;
 		flash_alpha = 1;
-		alarm[2] = room_speed;
+		alarm[2] =	  game_get_speed(gamespeed_fps)
 	}
 }
 
