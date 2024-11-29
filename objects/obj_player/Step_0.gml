@@ -14,7 +14,8 @@ var space =  keyboard_check_pressed(vk_space);
 // check collistion 
 if(place_meeting(x,y,obj_enemy_interface) )
 {
-	if (collision){ 
+	if (collision)
+	{ 
 		audio_play_sound(sfx_player_hit,3, false)
 		collision = false;
 	}
@@ -48,14 +49,34 @@ if (invulnerable > 0)
 }
 
 // Flashes player use the interface instead in this case 
-if(place_meeting(x,y,obj_spike) || place_meeting(x,y,obj_slime) || place_meeting(x,y,obj_turret_bullet))
+if(place_meeting(x,y,obj_thorn) || place_meeting(x,y,obj_slime) || place_meeting(x,y,obj_turret_bullet))
 {
+	// player got hit 
 	if(!flash){
 		health -= 20
 		flash = true;
 		flash_alpha = 1;
-		alarm[2] =	  game_get_speed(gamespeed_fps)
+		alarm[2] =	0.50 *   game_get_speed(gamespeed_fps)
+		
+		var enemy_Insta =  instance_place(x, y, obj_thorn)
+		// 
+		if(enemy_Insta != noone)
+		{ 
+			var unit_knk = 6
+			// get the angle 
+			enemy_angle = point_direction(enemy_Insta.x, enemy_Insta.y, self.x, self.y)
+			knbX = lengthdir_x( unit_knk, enemy_angle) // move 4 units on x
+			knbY = lengthdir_y(unit_knk, enemy_angle) // move 4 units on y
+			can_move = false
+			// now alarm it
+			enemy_delay = 0.50
+			alarm[1] = enemy_delay * game_get_speed(gamespeed_fps); 
+		}
+		
 	}
+	
+		
+	
 }
 
 
@@ -63,6 +84,14 @@ if(place_meeting(x,y,obj_spike) || place_meeting(x,y,obj_slime) || place_meeting
 if(flash_alpha > 0)
 {
 	flash_alpha -= 0.05;
+}
+
+if (!can_move)
+{
+	knbX *= 0.85
+	knbY *= 0.85
+	x += knbX
+	y += knbY
 }
 
 
