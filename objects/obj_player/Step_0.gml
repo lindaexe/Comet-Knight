@@ -52,11 +52,12 @@ if (invulnerable > 0)
 if(place_meeting(x,y,obj_thorn) || place_meeting(x,y,obj_slime) || place_meeting(x,y,obj_turret_bullet))
 {
 	// player got hit 
-	if(!flash){
+	if(!flash && can_move)
+	{
 		health -= 20
 		flash = true;
 		flash_alpha = 1;
-		alarm[2] =	0.50 *   game_get_speed(gamespeed_fps)
+		alarm[2] =	0.50 * game_get_speed(gamespeed_fps)
 		
 		var enemy_Insta =  instance_place(x, y, obj_thorn)
 		// 
@@ -90,8 +91,51 @@ if (!can_move)
 {
 	knbX *= 0.85
 	knbY *= 0.85
-	x += knbX
-	y += knbY
+	
+	xVelocity =  knbX
+	yVelocity =  knbY
+	
+	var predictedX = x + xVelocity 
+	var predictedY = y + yVelocity 
+	
+	// if not touching why on X cordinate move otherwise phase out 1 pixel
+	if (!place_meeting(predictedX, y, obj_collidable))
+	{
+		x += knbX
+	}
+	else
+	{
+		
+		predictedX = x;
+		// loop till phased out 
+		while (!place_meeting(predictedX,y, obj_collidable))
+		{
+			
+			predictedX += sign(knbY)
+		}
+		
+		x = predictedX - sign(knbY)  // one pixel away
+	}
+	
+	// if not touching on Y cordinate move otherwise phase out 1 pixel
+	if ( !place_meeting(x, predictedY, obj_collidable) )
+	{
+		y += knbY
+	}
+	else
+	{
+		predictedY = y;
+		// loop till phased out
+		while ( !place_meeting(x,predictedY, obj_collidable) )
+		{
+			predictedY += sign(knbY);
+		}
+		y = predictedY - sign(knbY); // one pixel away
+	}
+	
+	
+	
+
 }
 
 
@@ -280,4 +324,4 @@ else if(!is_Attacking && can_move)
 			facing = 2
 		}		
 	}
-} 
+}
