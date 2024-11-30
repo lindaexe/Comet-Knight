@@ -9,10 +9,13 @@
   "name":"obj_spikes_switch",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Obstacles",
+    "path":"folders/Objects/Obstacles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_enemy_interface",
+    "path":"objects/obj_enemy_interface/obj_enemy_interface.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +32,6 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"switchFind","filters":[],"listItems":[],"multiselect":false,"name":"switchFind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"isOn","filters":[],"listItems":[],"multiselect":false,"name":"isOn","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"isAttacking","filters":[],"listItems":[],"multiselect":false,"name":"isAttacking","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

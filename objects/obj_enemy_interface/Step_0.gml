@@ -1,4 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
 
-
+// has health and destructable 
+if( self.hitPoints <= 0 && isInvulnerable == false)
+{
+	instance_destroy(self)
+}

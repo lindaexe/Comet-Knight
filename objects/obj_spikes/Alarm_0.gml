@@ -4,4 +4,7 @@ inState = false;
 image_speed =1 
 image_index += 1
 
-if(isAttacking){isAttacking = !isAttacking}
+if(isAttacking)
+{
+	isAttacking = !isAttacking		
+}

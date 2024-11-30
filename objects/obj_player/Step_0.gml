@@ -11,20 +11,6 @@ var right = keyboard_check(ord("D"));
 var space =  keyboard_check_pressed(vk_space); 
 
 
-// check collistion 
-if(place_meeting(x,y,obj_enemy_interface) )
-{
-	if (collision)
-	{ 
-		audio_play_sound(sfx_player_hit,3, false)
-		collision = false;
-	}
-}
-else
-{
-	collision = true
-}
-
 // keyboard check for weapons equiped 
 if ( keyboard_lastkey >= ord("0") && keyboard_lastkey <= ord("9") && can_move )
 {
@@ -49,17 +35,18 @@ if (invulnerable > 0)
 }
 
 // Flashes player use the interface instead in this case 
-if(place_meeting(x,y,obj_thorn) || place_meeting(x,y,obj_slime) || place_meeting(x,y,obj_turret_bullet))
+if(place_meeting(x,y,obj_enemy_interface) )
 {
-	// player got hit 
-	if(!flash && can_move)
+	var obj = instance_place(x,y,obj_enemy_interface) 
+	// player got hit assuming it not an obstacle and it is on (meaing spikes retracted)
+	if(!flash && can_move && obj.isObstacle && obj.isAttacking )
 	{
 		health -= 20
 		flash = true;
 		flash_alpha = 1;
 		alarm[2] =	0.50 * game_get_speed(gamespeed_fps)
-		
-		var enemy_Insta =  instance_place(x, y, obj_thorn)
+		audio_play_sound(sfx_player_hit,3, false)
+		var enemy_Insta =  obj
 		// 
 		if(enemy_Insta != noone)
 		{ 
@@ -72,14 +59,9 @@ if(place_meeting(x,y,obj_thorn) || place_meeting(x,y,obj_slime) || place_meeting
 			// now alarm it
 			enemy_delay = 0.50
 			alarm[1] = enemy_delay * game_get_speed(gamespeed_fps); 
-		}
-		
-	}
-	
-		
-	
+		}	
+	}	
 }
-
 
 
 if(flash_alpha > 0)

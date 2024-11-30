@@ -11,7 +11,8 @@ if (self.isOn && image_index == 5)
 else if(self.isOn == false && image_index == 0)
 {
 	image_speed = 0; 
-	self.isAttacking = false; 
+	self.isAttacking = false;
+	
 }
 
 

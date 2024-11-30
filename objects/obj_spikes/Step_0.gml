@@ -11,6 +11,7 @@ if (!inState)
 		alarm[0] = waitDelay * game_get_speed(gamespeed_fps)
 		inState = true
 		image_speed = 0; 
+		isOn = false; 
 	}
 	else if (image_index == 5)
 	{
@@ -18,6 +19,7 @@ if (!inState)
 		alarm[0] = attackDelay * game_get_speed(gamespeed_fps) 
 		inState = true
 		isAttacking = true; 
+		isOn = true; 
 		image_speed = 0 
 	}
 	
