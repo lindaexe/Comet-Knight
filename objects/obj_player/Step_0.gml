@@ -60,7 +60,29 @@ if(place_meeting(x,y,obj_enemy_interface) )
 			enemy_delay = 0.50
 			alarm[1] = enemy_delay * game_get_speed(gamespeed_fps); 
 		}	
-	}	
+	}
+	else if (!obj.isObstacle)
+	{
+		health -= 20
+		flash = true;
+		flash_alpha = 1;
+		alarm[2] =	0.50 * game_get_speed(gamespeed_fps)
+		audio_play_sound(sfx_player_hit,3, false)
+		var enemy_Insta =  obj
+		// 
+		if(enemy_Insta != noone)
+		{ 
+			var unit_knk = 6
+			// get the angle 
+			enemy_angle = point_direction(enemy_Insta.x, enemy_Insta.y, self.x, self.y)
+			knbX = lengthdir_x( unit_knk, enemy_angle) // move 4 units on x
+			knbY = lengthdir_y(unit_knk, enemy_angle) // move 4 units on y
+			can_move = false
+			// now alarm it
+			enemy_delay = 0.50
+			alarm[1] = enemy_delay * game_get_speed(gamespeed_fps); 
+		}
+	}
 }
 
 
