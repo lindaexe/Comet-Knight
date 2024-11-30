@@ -17,8 +17,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_interface","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"propertyId":{"name":"destroy_sound","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"resource":{"name":"sfx_slime_hit","path":"sounds/sfx_slime_hit/sfx_slime_hit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_slime_hit",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"enemy",
+    "path":"folders/Objects/enemy.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_interface",
