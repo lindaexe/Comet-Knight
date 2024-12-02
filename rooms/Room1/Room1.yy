@@ -250,6 +250,8 @@
     {"name":"inst_61BE4A41","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_806FFAB","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_52F3C25C","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_3FB40F64","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_2572A75C","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -507,6 +509,8 @@
         {"$GMRInstance":"v1","%Name":"inst_61BE4A41","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61BE4A41","objectId":{"name":"obj_collect_coin","path":"objects/obj_collect_coin/obj_collect_coin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":160.0,},
         {"$GMRInstance":"v1","%Name":"inst_806FFAB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_806FFAB","objectId":{"name":"obj_collect_coin","path":"objects/obj_collect_coin/obj_collect_coin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":96.0,},
         {"$GMRInstance":"v1","%Name":"inst_52F3C25C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52F3C25C","objectId":{"name":"obj_save_point","path":"objects/obj_save_point/obj_save_point.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":672.0,},
+        {"$GMRInstance":"v1","%Name":"inst_3FB40F64","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3FB40F64","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2572A75C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2572A75C","objectId":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":416.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"DugeonFloor","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"DugeonFloor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":120,"SerialiseWidth":87,"TileCompressedData":[
           -38,-2147483648,8,2,3,2,3,2,3,2,3,-38,-2147483648,-2,0,-39,-2147483648,8,6,7,6,7,6,7,6,7,-37,-2147483648,
