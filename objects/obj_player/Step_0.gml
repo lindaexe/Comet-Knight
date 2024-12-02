@@ -39,8 +39,9 @@ if(place_meeting(x,y,obj_enemy_interface) )
 {
 	var obj = instance_place(x,y,obj_enemy_interface) 
 	// player hit by an obstacle and obstacles is in attacking state reduce health / flash 
-	if(!flash && can_move && obj.isObstacle && obj.isAttacking )
+	if(!flash && can_move && obj.isObstacle && obj.isAttacking ) // hirt by obstacle
 	{
+	
 		health -= 20
 		flash = true;
 		flash_alpha = 1;
@@ -61,8 +62,9 @@ if(place_meeting(x,y,obj_enemy_interface) )
 			alarm[1] = enemy_delay * game_get_speed(gamespeed_fps); 
 		}	
 	} // when player gets touched by a non-obstacle enemy reduce health/flash
-	else if (!obj.isObstacle)
+	else if ( !flash && !obj.isObstacle) // hurt by entity
 	{
+		obj.delayNextAttack = true
 		health -= 20
 		flash = true;
 		flash_alpha = 1;
@@ -156,7 +158,7 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 		
 		self.is_Attacking = true; 
 		alarm[0] = attack_Time *  game_get_speed( gamespeed_fps) ;
-		show_debug_message("Attack occurred");   
+	
 		var offsetX = x
 		var offsetY = y
 		var angle = 0; 
@@ -191,7 +193,7 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 		case WEAPONS.GUN: 
 		self.is_Attacking = true; 
 		alarm[0] = attack_Time *  game_get_speed( gamespeed_fps) ;
-		show_debug_message("Attack occurred");   
+		
 		switch (self.facing){
 		case 1:
 	// up attack

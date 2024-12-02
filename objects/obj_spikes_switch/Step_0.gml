@@ -7,6 +7,7 @@ if (self.isOn && image_index == 5)
 {
 	image_speed = 0
 	self.isAttacking = true; 
+	
 }
 else if(self.isOn == false && image_index == 0)
 {
@@ -27,6 +28,10 @@ with(obj_switch)
 		{
 			other.image_speed = 1
 			other.isOn = self.isOn
+			if (distance_to_object(obj_player) < 300)
+			{
+				audio_play_sound( sfx_spike,1, false)
+			} 
 		}
 		
 		

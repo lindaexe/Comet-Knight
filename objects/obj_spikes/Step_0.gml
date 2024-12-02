@@ -12,6 +12,10 @@ if (!inState)
 		inState = true
 		image_speed = 0; 
 		isOn = false; 
+		if (distance_to_object(obj_player) < 300)
+		{
+			audio_play_sound( sfx_spike,1, false)
+		} 
 	}
 	else if (image_index == 5)
 	{
@@ -21,6 +25,10 @@ if (!inState)
 		isAttacking = true; 
 		isOn = true; 
 		image_speed = 0 
+		if (distance_to_object(obj_player) < 300)
+		{
+			audio_play_sound( sfx_spike,1, false)
+		} 
 	}
 	
 } 
