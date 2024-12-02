@@ -86,113 +86,86 @@ else if (!isHurt)
 	
 		var enemyX = self.x; 
 		var enemyY = self.y ; 
-	show_debug_message(originY)
-
+	
+		var predictedX = x + xVelocity
+		var predictedY = y + yVelocity 
 		// if enemy not players X coordinate chase him on X axis 
 		if (!delayNextAttack)
 		{ 
-			switch (attackerType )
-			{
-				case ATTACKER.HORIZONTAL: 
-				rangeY = abs ( playerY - originY ) 
-				rangeX = abs ( playerX - originX ) 
-				// if player is within range of the origin point if so goblin go and attack them other wise run back
-				if ( rangeX <=  rangeMaxX  && rangeY < 32) 
-				{  
-					// within range follow player along yAxis 
-					if( (enemyX - playerX) < -32 )
-					{
-						// player is right
-						x += 1 * xVelocity 
-						image_speed = 1 
-						face = FACING.RIGHT	
-					}
-					else if ( (enemyX - playerX) > 32 )
-					{
-						// player is left
-						x -= 1 * xVelocity 
-						image_speed = 1
-						face = FACING.LEFT
-					}
-					else
-					{
-						image_index = 0 ;
-						canMove = false
-					}
-						
-				}
-				else // out of range case 
-				{
-					// out of range now go back 
-					if (x - originX <  -16) // origin on right
-					{
-						x += 1 * xVelocity
-						face = FACING.RIGHT
-						image_speed = 1 
-					}
-					else if (x - originX > 16) // origin on left
-					{
-						x += -1 * xVelocity
-						face = FACING.LEFT
-						image_speed = 1
-					}
-					else
-					{
-						image_speed = 0; 
-					}
-				}
-				
-				break; 
-				case ATTACKER.VERTICAL: 
-				rangeY = abs ( playerY - originY ) 
-				rangeX = abs (playerX - originX)
-				// if player is within range of the origin point if so goblin go and attack them other wise run back
-				if ( rangeY <=  rangeMaxY && rangeX < 32) 
-				{  
-					// within range follow player along yAxis 
-					if( (enemyY - playerY) < -32 )
-					{
-						// player is down
-						y += 1 * yVelocity 
-						image_speed = 1 
-						face = FACING.DOWN	
-					}
-					else if ( (enemyY - playerY) > 32 )
-					{
-						// player is up
-						y -= 1 * yVelocity 
-						image_speed = 1
-						face = FACING.UP
-					}
-					else
-					{
-						image_index = 0 ;
-						canMove = false
-					}
-						
-				}
-				else // out of range case 
-				{
-					// out of range now go back 
-					if (y - originY <  -16) // origin below
-					{
-						y += 1 * yVelocity
-						face = FACING.DOWN
-						image_speed = 1 
-					}
-					else if (y - originY > 16)
-					{
-						y += -1 * yVelocity
-						face = FACING.UP
-						image_speed = 1
-					}
-					else
-					{
-						image_speed = 0; 
-					}
-				}
-				break; 
+			
+			if( (enemyX - playerX) < 0 )
+			{				
+				// player is on the right move positive
+				x += 1 * xVelocity 
+				image_speed = 1 
+				face = FACING.RIGHT
 			}
+			else if ( (enemyX - playerX) > 16  )
+			{
+				// player is on the left 
+				x -= 1 * xVelocity 
+				image_speed = 1
+				face = FACING.LEFT
+			}
+			else 
+			{
+				// if enemy not palyers Y coordinate chase him on Y axis 
+				if( (enemyY - playerY) < -32 )
+				{
+					// player is down
+					y += 1 * yVelocity 
+					image_speed = 1 
+					face = FACING.DOWN	
+				}
+				else if ( (enemyY - playerY) > 32 )
+				{
+					// player is up
+					y -= 1 * yVelocity 
+					image_speed = 1
+					face = FACING.UP
+				}
+				else
+				{
+					image_index = 0 ;
+					canMove = false
+				}
+			}
+				
+		// if not touching why on X cordinate move otherwise phase out 1 pixel
+			if (!place_meeting(predictedX, y, obj_collidable))
+			{
+				x += xVelocity
+			}
+			else
+			{
+		
+				predictedX = x;
+				// loop till phased out 
+				while (!place_meeting(predictedX,y, obj_collidable))
+				{
+			
+					predictedX += sign(xVelocity)
+				}
+		
+				x = predictedX - sign(xVelocity)  // one pixel away
+			}
+	
+			// if not touching on Y cordinate move otherwise phase out 1 pixel
+			if ( !place_meeting(x, predictedY, obj_collidable) )
+			{
+				y += yVelocity
+			}
+			else
+			{
+				predictedY = y;
+				// loop till phased out
+				while ( !place_meeting(x,predictedY, obj_collidable) )
+				{
+					predictedY += sign(yVelocity);
+				}
+				y = predictedY - sign(yVelocity); // one pixel away
+			}
+			
 		}
 		else if (hasDelayed) 
 		{

@@ -193,6 +193,7 @@
     {"id":{"name":"obj_floor_tile2","path":"objects/obj_floor_tile2/obj_floor_tile2.yy",},},
     {"id":{"name":"obj_floor_tile3","path":"objects/obj_floor_tile3/obj_floor_tile3.yy",},},
     {"id":{"name":"obj_floor_tile4","path":"objects/obj_floor_tile4/obj_floor_tile4.yy",},},
+    {"id":{"name":"obj_goblin_SCRAPPED","path":"objects/obj_goblin_SCRAPPED/obj_goblin_SCRAPPED.yy",},},
     {"id":{"name":"obj_goblin","path":"objects/obj_goblin/obj_goblin.yy",},},
     {"id":{"name":"obj_gun_found_dialog","path":"objects/obj_gun_found_dialog/obj_gun_found_dialog.yy",},},
     {"id":{"name":"obj_health_dialog","path":"objects/obj_health_dialog/obj_health_dialog.yy",},},

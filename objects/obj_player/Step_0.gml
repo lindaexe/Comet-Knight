@@ -107,7 +107,7 @@ if (!can_move)
 	// if not touching why on X cordinate move otherwise phase out 1 pixel
 	if (!place_meeting(predictedX, y, obj_collidable))
 	{
-		x += knbX
+		x += xVelocity
 	}
 	else
 	{
@@ -117,16 +117,16 @@ if (!can_move)
 		while (!place_meeting(predictedX,y, obj_collidable))
 		{
 			
-			predictedX += sign(knbY)
+			predictedX += sign(xVelocity)
 		}
 		
-		x = predictedX - sign(knbY)  // one pixel away
+		x = predictedX - sign(xVelocity)  // one pixel away
 	}
 	
 	// if not touching on Y cordinate move otherwise phase out 1 pixel
 	if ( !place_meeting(x, predictedY, obj_collidable) )
 	{
-		y += knbY
+		y += yVelocity
 	}
 	else
 	{
@@ -134,9 +134,9 @@ if (!can_move)
 		// loop till phased out
 		while ( !place_meeting(x,predictedY, obj_collidable) )
 		{
-			predictedY += sign(knbY);
+			predictedY += sign(yVelocity);
 		}
-		y = predictedY - sign(knbY); // one pixel away
+		y = predictedY - sign(yVelocity); // one pixel away
 	}
 	
 	

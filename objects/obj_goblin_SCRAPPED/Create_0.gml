@@ -4,14 +4,10 @@
 image_xscale = 1.5 
 image_yscale = 1.5
 
-
-
-enum ATTACKER 
+enum FACING 
 {
-	HORIZONTAL = 1, 
-	VERTICAL = 2
+	LEFT = 1, 
+	RIGHT , 
+	UP, 
+	DOWN 
 }
-
-// get initial postions in the room
-originX = x 
-originY = y
