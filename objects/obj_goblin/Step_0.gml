@@ -70,9 +70,10 @@ if ( place_meeting(x, y, obj_parent_damage) )
 		can_be_damaged = false; 
 		damage_reset_timer = 0; 
 		damage_reset_delay = damage_item.duration * 1000000; // delay till get damaged again
-		audio_play_sound(sfx_sword_crunch, 1, false)
+		audio_play_sound(sfx_hit, 1, false)
 		image_speed = 0 
 		image_index = 0; 
+		flashAlpha = 1 
 	}
 	
 }  
@@ -86,7 +87,7 @@ else if (!isHurt)
 	
 		var enemyX = self.x; 
 		var enemyY = self.y ; 
-	show_debug_message(originY)
+
 
 		// if enemy not players X coordinate chase him on X axis 
 		if (!delayNextAttack)
@@ -203,6 +204,11 @@ else if (!isHurt)
 		}
 	}
 } 
+
+if (flashAlpha > 0)
+{
+	flashAlpha -= 0.05 
+}
 
 // now check collisions 
 

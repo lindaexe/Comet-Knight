@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message("item collected")
+
 if (item_type == WEAPONS.GUN || item_type == WEAPONS.MINE || item_type == WEAPONS.SWORD) 
 { 
 	ds_list_add(obj_controller.players_weapons, item_type );

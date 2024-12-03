@@ -15,3 +15,7 @@ enum ATTACKER
 // get initial postions in the room
 originX = x 
 originY = y
+
+// flash= 
+flashAlpha = 0 
+flashColor = c_white 

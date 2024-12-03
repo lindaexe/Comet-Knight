@@ -27,3 +27,6 @@ switch(self.direction)
 	break; 
 }
 
+// flash= 
+flashAlpha = 0 
+flashColor = c_white 

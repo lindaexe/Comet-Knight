@@ -25,22 +25,22 @@ if (self.fr_shoot && can_shoot)
 	switch(self.direction)
 	{
 		case DIRECTION.UP:
-		dirY = -4;  
+		dirY = -1 * bullet_velocity;  
 		dirX = 0; 
 		bullet = instance_create_layer(x ,y + ( -1 * offsetY ) , "Instances", bulletType)
 		break; 
 		case DIRECTION.DOWN:
-		dirY = 4;
+		dirY = 1 * bullet_velocity;
 		dirX = 0; 
 		bullet = instance_create_layer(x ,y + offsetY, "Instances", bulletType)
 		break; 
 		case DIRECTION.LEFT: 
-		dirX = -4 ; 
+		dirX = -1 * bullet_velocity ; 
 		dirY = 0; 
 		bullet = instance_create_layer(x + ( -1 * offsetX ),y , "Instances", bulletType)
 		break ;
 		case DIRECTION.RIGHT:
-		dirX = 4; 
+		dirX = 1 * bullet_velocity; 
 		dirY = 0; 
 		bullet = instance_create_layer(x + offsetX,y, "Instances", bulletType)
 		break; 
@@ -97,4 +97,11 @@ if (hitPoints <= 0)
 {
 	instance_destroy(self); 
 	audio_play_sound(sfx_explosion,1,false)
+	instance_create_layer(x,y,"Instances", obj_blue_explosion)
+}
+
+
+if (flashAlpha > 0)
+{
+	flashAlpha -= 0.05 
 }

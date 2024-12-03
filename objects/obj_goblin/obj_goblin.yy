@@ -8,6 +8,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_parent_damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_goblin",
@@ -19,8 +20,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_interface","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"propertyId":{"name":"hitPoints","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"9",},
   ],
   "parent":{
-    "name":"enemy",
-    "path":"folders/Objects/enemy.yy",
+    "name":"goblin",
+    "path":"folders/Objects/enemy/goblin.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_interface",
