@@ -15,6 +15,7 @@
   "name":"obj_slime",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_interface","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"propertyId":{"name":"destroy_sound","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"resource":{"name":"sfx_slime_hit","path":"sounds/sfx_slime_hit/sfx_slime_hit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_slime_hit",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_interface","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"propertyId":{"name":"isObstacle","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
     "name":"enemy",

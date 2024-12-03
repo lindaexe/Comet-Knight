@@ -9,9 +9,7 @@ enum DIRECTION
 	DOWN 
 }
 
-// First shot to start the cycle 
-alarm[0] = game_get_speed(gamespeed_fps) * initial_delay
-alarm[1] = game_get_speed(gamespeed_fps) * delay
+
 
 switch(self.direction)
 {
@@ -28,3 +26,4 @@ switch(self.direction)
 	image_angle += 0
 	break; 
 }
+

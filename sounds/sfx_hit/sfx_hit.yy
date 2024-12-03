@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sfx_player_hit",
+  "%Name":"sfx_hit",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":0.170726,
-  "name":"sfx_player_hit",
+  "name":"sfx_hit",
   "parent":{
     "name":"player_sounds",
     "path":"folders/Sounds/sfx/player_sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_player_hit.wav",
+  "soundFile":"sfx_hit.wav",
   "type":0,
   "volume":1.0,
 }

@@ -46,7 +46,7 @@ if(place_meeting(x,y,obj_enemy_interface) )
 		flash = true;
 		flash_alpha = 1;
 		alarm[2] =	0.50 * game_get_speed(gamespeed_fps)
-		audio_play_sound(sfx_player_hit,3, false)
+		audio_play_sound(sfx_hit,3, false)
 		var enemy_Insta =  obj
 		// 
 		if(enemy_Insta != noone)
@@ -69,7 +69,7 @@ if(place_meeting(x,y,obj_enemy_interface) )
 		flash = true;
 		flash_alpha = 1;
 		alarm[2] =	0.50 * game_get_speed(gamespeed_fps)
-		audio_play_sound(sfx_player_hit,3, false)
+		audio_play_sound(sfx_hit,3, false)
 		var enemy_Insta =  obj
 		// 
 		if(enemy_Insta != noone)

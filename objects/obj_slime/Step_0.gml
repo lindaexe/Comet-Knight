@@ -139,7 +139,7 @@ if (state != SlimeState.DEAD) {
     y += final_y;
 
     // Wall collision
-    if (place_meeting(x, y, obj_collidable)) {
+    if (place_meeting(x, y, obj_collidable) || place_meeting(x,y,obj_thorn) ) {
         x -= final_x;
         y -= final_y;
         
