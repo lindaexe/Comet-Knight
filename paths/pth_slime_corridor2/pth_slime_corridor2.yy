@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_slime_corridor2",
+  "closed":true,
+  "kind":0,
+  "name":"pth_slime_corridor2",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":1250.6207,"y":687.44824,},
+    {"speed":100.0,"x":1507.1035,"y":686.34485,},
+    {"speed":100.0,"x":1504.6553,"y":898.55176,},
+    {"speed":100.0,"x":1250.2069,"y":898.9655,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

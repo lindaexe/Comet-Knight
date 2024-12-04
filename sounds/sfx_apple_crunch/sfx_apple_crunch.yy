@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_apple_crunch",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.497438,
+  "name":"sfx_apple_crunch",
+  "parent":{
+    "name":"item_sounds",
+    "path":"folders/Sounds/sfx/item_sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_apple_crunch.wav",
+  "type":0,
+  "volume":1.0,
+}

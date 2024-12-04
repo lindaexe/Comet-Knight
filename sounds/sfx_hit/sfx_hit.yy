@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_hit",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.170726,
+  "name":"sfx_hit",
+  "parent":{
+    "name":"player_sounds",
+    "path":"folders/Sounds/sfx/player_sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_hit.wav",
+  "type":0,
+  "volume":1.0,
+}

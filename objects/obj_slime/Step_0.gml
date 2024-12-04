@@ -1,31 +1,28 @@
-// Check for damage from player's sword
-if (state != SlimeState.DEAD) {
-    // Decrease cooldowns
-    if (hurt_cooldown > 0) hurt_cooldown--;
-    if (jump_cooldown > 0) jump_cooldown--;
-    if (attack_cooldown > 0) attack_cooldown--;
-
-    // Check for damage from player's sword
-    if (hurt_cooldown <= 0) {
-        var sword = instance_place(x, y, obj_melee_attack);
-        if (sword != noone && hp >= 0) {
-            hp = max(0, hp - 1); // Prevent hp from going below 0
-            hurt_cooldown = hurt_cooldown_max;
-            show_debug_message("Damage dealt");
-            state = SlimeState.HURT;
-            alarm[2] = room_speed * 0.5;
-        } else if (hp <= 0) {
-			isDead = true;
-            state = SlimeState.DEAD;
-            
-			if (sprite_index != spr_slime_die) {
-            // Only set the death animation once
+// Damage dealt on slime
+if place_meeting(x, y, obj_parent_damage)
+{
+    var damage_item = instance_place(x,y,obj_parent_damage);
+    hp = max(0, hp - damage_item.damage);
+    
+    // Calculate knockback direction
+    var knock_dir = point_direction(damage_item.x, damage_item.y, x, y);
+    knockback_x = lengthdir_x(knockback_speed, knock_dir);
+    knockback_y = lengthdir_y(knockback_speed, knock_dir);
+    
+    // Change state to hurt
+    state = SlimeState.HURT;
+    
+    instance_destroy(obj_parent_damage);
+    
+    if(hp == 0){
+        isDead = true;
+        state = SlimeState.DEAD;
+        if(sprite_index != spr_slime_die){
             sprite_index = spr_slime_die;
             image_index = 0;
             image_speed = 0.6;
-            alarm[3] = room_speed * 0.5; 
-			}
-		}
+            alarm[3] = room_speed * 0.5;
+        }
     }
 }
 
@@ -81,21 +78,6 @@ switch(state) {
         if (!isDead) {
 	        x_speed = 0;
 			y_speed = 0;
-    
-			// Check if attack animation is at the damage frame
-			if (image_index >= 3 && image_index <= 4) {
-				if (distance_to_object(obj_player) < attack_range) {
-					//damage_entity(obj_player, id, damage, 30)
-				}
-			}
-    
-			// Check if attack animation ended
-		    if (image_index >= image_number - 1) {
-		        state = SlimeState.CHASE;
-		        // Add cooldown before next attack
-		        attack_cooldown = attack_cooldown_max;
-		    }
-	    
         }
         break;
         
@@ -117,9 +99,23 @@ switch(state) {
         break;
         
     case SlimeState.HURT:
-        x_speed = 0;
-        y_speed = 0;
-        break;
+	    // Apply knockback movement
+	    x += knockback_x;
+	    y += knockback_y;
+    
+	    // Apply friction to knockback
+	    knockback_x *= knockback_friction;
+	    knockback_y *= knockback_friction;
+    
+	    // Return to chase state when knockback is very small
+	    if (abs(knockback_x) < 0.1 && abs(knockback_y) < 0.1) {
+	        knockback_x = 0;
+	        knockback_y = 0;
+	        state = SlimeState.CHASE;
+	    }
+    
+	    flash = true;
+	    break;
         
     case SlimeState.DEAD:
         x_speed = 0;
@@ -127,17 +123,32 @@ switch(state) {
         break;
 }
 
-// Only apply movement if not dead
+
 if (state != SlimeState.DEAD) {
     // Apply movement
-    x += x_speed;
-    y += y_speed;
+    var final_x = x_speed;
+    var final_y = y_speed;
+    
+    // Add knockback if in hurt state
+    if (state == SlimeState.HURT) {
+        final_x = knockback_x;
+        final_y = knockback_y;
+    }
+    
+    x += final_x;
+    y += final_y;
 
     // Wall collision
-    if (place_meeting(x, y, obj_wall)) {
-        x -= x_speed;
-        y -= y_speed;
-        x_speed *= -1;
-        y_speed *= -1;
+    if (place_meeting(x, y, obj_collidable) || place_meeting(x,y,obj_thorn) ) {
+        x -= final_x;
+        y -= final_y;
+        
+        if (state == SlimeState.HURT) {
+            knockback_x *= -0.5;
+            knockback_y *= -0.5;
+        } else {
+            x_speed *= -1;
+            y_speed *= -1;
+        }
     }
 }

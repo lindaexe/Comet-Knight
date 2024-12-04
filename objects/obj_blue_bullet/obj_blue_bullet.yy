@@ -9,8 +9,8 @@
   "name":"obj_blue_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"player_bullets",
+    "path":"folders/Objects/player_bullets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,6 +34,9 @@
     "name":"spr_blue_bullet",
     "path":"sprites/spr_blue_bullet/spr_blue_bullet.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_blue_bullet",
+    "path":"sprites/spr_blue_bullet/spr_blue_bullet.yy",
+  },
   "visible":true,
 }

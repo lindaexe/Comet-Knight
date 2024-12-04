@@ -39,10 +39,16 @@ jump_cooldown_max = room_speed * 3; // Jump every 3 seconds
 attack_cooldown = 0;
 attack_cooldown_max = room_speed * 2; // Attack every 2 seconds
 
+// Knockback variables
+knockback_speed = 4;      // How fast the slime gets pushed back
+knockback_friction = 0.85; // How quickly the knockback slows down
+knockback_x = 0;          // Current knockback horizontal speed
+knockback_y = 0;          // Current knockback vertical speed
 // Hurt effect variables
 flash = false;
 flash_duration = 3;
 flash_alpha = 0;
+flash_color = c_white;
 
 hurt_cooldown = 0;
 hurt_cooldown_max = 15; // Frames of invincibility after being hit
