@@ -1,3 +1,3 @@
 targetRoom = Room1
-targetX = 673
-targetY = 640
+targetX = 868
+targetY = 1362
