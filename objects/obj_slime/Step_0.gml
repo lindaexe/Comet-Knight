@@ -26,6 +26,19 @@ if place_meeting(x, y, obj_parent_damage)
     }
 }
 
+if (place_meeting(x, y, obj_player)) {
+    self.hitPoints -= other.damage;
+    
+    // Slow down the slime
+    chase_speed *= 0.5;  
+    alarm[4] = room_speed * 2;
+    
+    self.state = SlimeState.IDLE;
+    if (destroy_sound != noone) {
+        audio_play_sound(destroy_sound, 1, false);
+    }
+}
+
 // State machine
 switch(state) {
     case SlimeState.IDLE:
