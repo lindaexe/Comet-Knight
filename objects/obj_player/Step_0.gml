@@ -229,7 +229,33 @@ if (space && ds_list_size(obj_controller.players_weapons) !=0 && can_move)
 		audio_play_sound(sfx_lazer_shot_Clean,3,false)
 		break;
 		case WEAPONS.MINE: 
+		self.is_Attacking = true; 
+		alarm[0] = attack_Time *  game_get_speed( gamespeed_fps) ;
+		
+		switch (self.facing){
+		case 1:
+	// up attack
+		instance_create_layer(x,y-20,"Instances",obj_bomb)
+
+		 
 		break;
+		case 2:
+		// right attack
+		instance_create_layer(x+20,y+10,"Instances",obj_bomb)
+		
+		break;
+		case 3:
+		// down attack
+		instance_create_layer(x,y+30,"Instances",obj_bomb)
+		
+		break;
+		case 4:
+		// left attack
+		instance_create_layer(x-20,y+10,"Instances",obj_bomb)
+		
+		
+			break;
+		}
 		
 	}
 	
