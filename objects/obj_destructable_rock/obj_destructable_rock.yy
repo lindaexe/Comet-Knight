@@ -9,7 +9,10 @@
     "name":"inside_lvl2",
     "path":"folders/Objects/Environment/inside_lvl2.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_destructable_wall",
+    "path":"objects/obj_destructable_wall/obj_destructable_wall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

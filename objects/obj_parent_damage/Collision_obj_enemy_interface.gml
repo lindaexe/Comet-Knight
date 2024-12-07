@@ -2,13 +2,10 @@
 // You can write your code in this editor
 
 // shitty code but whatever
-if ( self != obj_sword_projectile) 
+if ( self != obj_sword_projectile ) 
 { 
 
-	if ( other.object_index == obj_turret_bullet ||
-	other.object_index == obj_spikes_switch ||
-	other.object_index == obj_spikes || 
-	other.object_index == obj_spike) 
+	if ( other.isObstacle == false) 
 	{
 	} 
 	else 

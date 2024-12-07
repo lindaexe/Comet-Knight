@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_destructable_wall",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_destructable_wall",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"inside_lvl2",
     "path":"folders/Objects/Environment/inside_lvl2.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collidable",
+    "path":"objects/obj_collidable/obj_collidable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
