@@ -8,5 +8,3 @@ if(flashAlpha > 0){
 		flashColor, flashAlpha);
 	shader_reset();
 }
-
-draw_path(path,x,y,1) 

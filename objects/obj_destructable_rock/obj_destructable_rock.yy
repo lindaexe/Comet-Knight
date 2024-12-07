@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_square",
+  "%Name":"obj_destructable_rock",
   "eventList":[],
   "managed":true,
-  "name":"obj_square",
+  "name":"obj_destructable_rock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"inside_lvl2",
+    "path":"folders/Objects/Environment/inside_lvl2.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_destructable_rock",
+    "path":"sprites/spr_destructable_rock/spr_destructable_rock.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
