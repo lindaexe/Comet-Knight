@@ -564,6 +564,7 @@
     {"name":"inst_64A65A57","path":"rooms/Room2_lvl2/Room2_lvl2.yy",},
     {"name":"inst_2E55C8A1","path":"rooms/Room2_lvl2/Room2_lvl2.yy",},
     {"name":"inst_45C2409A","path":"rooms/Room2_lvl2/Room2_lvl2.yy",},
+    {"name":"inst_2D203C4D","path":"rooms/Room2_lvl2/Room2_lvl2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -998,6 +999,7 @@
         {"$GMRInstance":"v1","%Name":"inst_17A5B467","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17A5B467","objectId":{"name":"obj_collect_coin","path":"objects/obj_collect_coin/obj_collect_coin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3840.0,"y":2000.0,},
         {"$GMRInstance":"v1","%Name":"inst_1B63299E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1B63299E","objectId":{"name":"obj_collect_health","path":"objects/obj_collect_health/obj_collect_health.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3584.0,"y":2064.0,},
         {"$GMRInstance":"v1","%Name":"inst_5C13235C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5C13235C","objectId":{"name":"obj_collect_health","path":"objects/obj_collect_health/obj_collect_health.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3824.0,"y":2576.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2D203C4D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D203C4D","objectId":{"name":"obj_skeleton","path":"objects/obj_skeleton/obj_skeleton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3536.0,"y":1184.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRPathLayer":"","%Name":"Path_1","colour":4278190335,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Path_1","pathId":null,"properties":[],"resourceType":"GMRPathLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_below","depth":700,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

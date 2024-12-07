@@ -107,6 +107,34 @@ else if (!isHurt)  // when enemy not hurt
 				// new path
 				path_start(path, walk_speed, path_action_stop, true)
 				alarm[1] =  game_get_speed( gamespeed_fps) * pathDelay; 
+				// get the next path 
+				
+				var nextX = path_get_x(path,1); 
+				var nextY = path_get_y(path,1);
+				
+				
+				// Calculate the movement deltas
+				var dx = nextX - x; // Change in X
+				var dy = nextY - y; // Change in Y
+
+				// Determine direction based on the axis of movement
+				if ( abs(dx) > abs(dy)) {
+				    // Moving horizontally (dominant X-axis)
+				    if (dx > 0) {
+				         self.face = DIRECTION.RIGHT
+				    } else if (dx < 0) {
+				         self.face = DIRECTION.LEFT
+				    }
+				} else {
+				    // Moving vertically (dominant Y-axis)
+				    if (dy > 0) {
+				       	    self.face = DIRECTION.DOWN
+				    } else if (dy < 0) {
+				      self.face = DIRECTION.UP
+				    }
+				}
+
+				image_speed = 1
 			}
 			
 		
