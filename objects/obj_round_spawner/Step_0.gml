@@ -43,10 +43,14 @@ with( obj_switch_round)
 					other.nextElement = other.nextElement % size ; 
 				}
 					sp = ds_list_find_value(other.spawn_locations, other.nextElement++)
-					instance_create_layer(sp.x,sp.y,"Instances", obj_skeleton)
-					other.spawn_reset_delay = other.spawnRate * 1000000;
-					other.spawn_reset_timer = 0; 
-					other.canSpawn = false; 
+					if (other.enemy_spawn++ < other.enemy_spawn_limit)
+					{ 
+						
+						instance_create_layer(sp.x,sp.y,"Instances", obj_skeleton)
+						other.spawn_reset_delay = other.spawnRate * 1000000;
+						other.spawn_reset_timer = 0; 
+						other.canSpawn = false; 
+					} 
 			}
 		}
 	}

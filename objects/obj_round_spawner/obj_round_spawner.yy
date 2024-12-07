@@ -36,6 +36,8 @@
     {"$GMObjectProperty":"v1","%Name":"spawn_locations","filters":[],"listItems":[],"multiselect":false,"name":"spawn_locations","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"ds_list_create()","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"nextElement","filters":[],"listItems":[],"multiselect":false,"name":"nextElement","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"switches","filters":[],"listItems":[],"multiselect":false,"name":"switches","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_spikes_switch_lvl2","path":"objects/obj_spikes_switch_lvl2/obj_spikes_switch_lvl2.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_spikes_switch_lvl2","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"enemy_spawn_limit","filters":[],"listItems":[],"multiselect":false,"name":"enemy_spawn_limit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"enemy_spawn","filters":[],"listItems":[],"multiselect":false,"name":"enemy_spawn","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
