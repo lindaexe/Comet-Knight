@@ -6,8 +6,8 @@
   "name":"obj_collect_bomb",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_interface","path":"objects/obj_item_interface/obj_item_interface.yy",},"propertyId":{"name":"item_type","path":"objects/obj_item_interface/obj_item_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"WEAPONS.MINE",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_interface","path":"objects/obj_item_interface/obj_item_interface.yy",},"propertyId":{"name":"spawn_asset","path":"objects/obj_item_interface/obj_item_interface.yy",},"resource":{"name":"obj_bomb_found_dialog","path":"objects/obj_bomb_found_dialog/obj_bomb_found_dialog.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_bomb_found_dialog",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_interface","path":"objects/obj_item_interface/obj_item_interface.yy",},"propertyId":{"name":"sound_play","path":"objects/obj_item_interface/obj_item_interface.yy",},"resource":{"name":"sfx_power_up","path":"sounds/sfx_power_up/sfx_power_up.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_power_up",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_interface","path":"objects/obj_item_interface/obj_item_interface.yy",},"propertyId":{"name":"spawn_asset","path":"objects/obj_item_interface/obj_item_interface.yy",},"resource":{"name":"obj_mine_found_dialog","path":"objects/obj_mine_found_dialog/obj_mine_found_dialog.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_mine_found_dialog",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item_interface","path":"objects/obj_item_interface/obj_item_interface.yy",},"propertyId":{"name":"sound_play","path":"objects/obj_item_interface/obj_item_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_power_up",},
   ],
   "parent":{
     "name":"items",
@@ -35,12 +35,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_display_bomb",
-    "path":"sprites/spr_display_bomb/spr_display_bomb.yy",
+    "name":"spr_bomb",
+    "path":"sprites/spr_bomb/spr_bomb.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_display_gun",
-    "path":"sprites/spr_display_gun/spr_display_gun.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

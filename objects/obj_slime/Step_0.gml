@@ -14,7 +14,7 @@ if place_meeting(x, y, obj_parent_damage)
     
     instance_destroy(obj_parent_damage);
     
-    if(hp == 0){
+    if(hp <= 0){
         isDead = true;
         state = SlimeState.DEAD;
         if(sprite_index != spr_slime_die){

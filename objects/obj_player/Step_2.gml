@@ -10,6 +10,7 @@ switch (self.animation_state)
 {
 	case 0: 
 		// idle
+
 		image_speed= 0; 
 		// load idle 
 		switch(facing)
@@ -35,6 +36,7 @@ switch (self.animation_state)
 			image_index = 0; 
 		break ; 
 	}
+
 	break; 
 	case 1: 
 		// north
@@ -45,7 +47,7 @@ switch (self.animation_state)
 		// east
 		sprite_index = spr_player_walk_right
 		image_speed = animation_speed; 
-	break ; 
+	break; 
 	case 3: 
 		// south
 		sprite_index = spr_player_walk_down
@@ -55,6 +57,7 @@ switch (self.animation_state)
 		// west
 		sprite_index = spr_player_walk_left
 		image_speed = animation_speed; 
+
 	break ; 
 	case 5:
 	// up attack
@@ -142,4 +145,5 @@ if(health <=0)
 	audio_play_sound(sfx_music_death,8,false)
 	instance_destroy(self)
 }
+
 

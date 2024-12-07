@@ -1,0 +1,43 @@
+[33mcommit 4a249293e9f466bdae1addef1f07476d3f3dd096[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmenu[m[33m, [m[1;31morigin/menu[m[33m)[m
+Author: synntacs <78395319+synntacs@users.noreply.github.com>
+Date:   Wed Nov 6 20:21:07 2024 -0700
+
+    menu commit
+
+[33mcommit a9057d1946bc3e2e049ad63ad707da9b9617f5ad[m
+Author: 2764anthony <71818522+2764anthony@users.noreply.github.com>
+Date:   Mon Nov 4 17:49:50 2024 -0700
+
+    menu
+    
+    Created keyboard and WASD/arrow controls for the menu and placeholders for the menu items. Play, Options, Controls, Quit Game added
+
+[33mcommit a03d9c56506952216eede87eb03f7da381e0127d[m
+Author: Jesse Jimenez <105522853+Girps@users.noreply.github.com>
+Date:   Thu Oct 24 19:12:13 2024 -0700
+
+    Delete Space_Knight.yyp
+
+[33mcommit a3d316ce1e0560ee78733f02b630f31897e16d17[m
+Author: Girps <jes20221168@gmail.com>
+Date:   Thu Oct 24 19:10:06 2024 -0700
+
+    changed name
+
+[33mcommit 6af67cdd63c83f9cfe587018377368252b28699b[m
+Author: Girps <jes20221168@gmail.com>
+Date:   Wed Oct 23 22:11:39 2024 -0700
+
+    added animation and state changes
+
+[33mcommit ac43e3d354a9f3769f9c08ebea15722cf6ece94d[m
+Author: Girps <jes20221168@gmail.com>
+Date:   Thu Oct 10 20:34:40 2024 -0700
+
+    replaced events with step events still need to do facing attacks
+
+[33mcommit 5c085dc5309d8dc8b18d751d38608d43194504aa[m
+Author: Girps <jes20221168@gmail.com>
+Date:   Thu Oct 10 18:36:33 2024 -0700
+
+    initial player commit
