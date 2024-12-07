@@ -31,6 +31,14 @@ with( obj_switch_round)
 					}
 				}
 				
+				with(obj_spikes_switch_lvl2_Round_Alt)
+				{
+					if(other.switchIndex == self.switchFind)
+					{
+						self.isOn= false 
+						image_speed = 1
+					}
+				}
 				
 			}
 			else if (other.canSpawn)

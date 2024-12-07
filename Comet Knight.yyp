@@ -237,6 +237,7 @@
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},},
     {"id":{"name":"obj_spikes_lvl2","path":"objects/obj_spikes_lvl2/obj_spikes_lvl2.yy",},},
     {"id":{"name":"obj_spikes_switch_lvl2_Act","path":"objects/obj_spikes_switch_lvl2_Act/obj_spikes_switch_lvl2_Act.yy",},},
+    {"id":{"name":"obj_spikes_switch_lvl2_Round_Alt","path":"objects/obj_spikes_switch_lvl2_Round_Alt/obj_spikes_switch_lvl2_Round_Alt.yy",},},
     {"id":{"name":"obj_spikes_switch_lvl2_Round","path":"objects/obj_spikes_switch_lvl2_Round/obj_spikes_switch_lvl2_Round.yy",},},
     {"id":{"name":"obj_spikes_switch_lvl2","path":"objects/obj_spikes_switch_lvl2/obj_spikes_switch_lvl2.yy",},},
     {"id":{"name":"obj_spikes_switch","path":"objects/obj_spikes_switch/obj_spikes_switch.yy",},},
