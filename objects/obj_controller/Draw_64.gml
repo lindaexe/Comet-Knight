@@ -63,7 +63,7 @@ if(!ds_list_empty(self.players_weapons))
 				draw_sprite(spr_select_sq_ac, 0 ,self.inventory_xCord  +( padding *i),inventory_yCord);
 			} 
 				draw_set_alpha(1)
-				draw_sprite(spr_sword, 0 ,self.inventory_xCord  +( padding *i),inventory_yCord);
+				draw_sprite(spr_display_bomb, 0 ,self.inventory_xCord  +( padding *i),inventory_yCord);
 			break;
 		}
 	}

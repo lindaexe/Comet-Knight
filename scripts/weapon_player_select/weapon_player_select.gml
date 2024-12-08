@@ -12,8 +12,7 @@ function weapon_player_select( selection,sound)
 		var item = ds_list_find_value(obj_controller.players_weapons, (integer_value - 1) );
 		switch(item)
 		{
-			case WEAPONS.SWORD:
-			show_debug_message("Sword selected")			
+			case WEAPONS.SWORD:	
 			obj_controller.weapon_selected = WEAPONS.SWORD
 			if(sound)
 			{
@@ -22,11 +21,13 @@ function weapon_player_select( selection,sound)
 			break; 
 			case WEAPONS.GUN:
 			obj_controller.weapon_selected = WEAPONS.GUN
-			show_debug_message("Gun selected")
 			break;
 			case WEAPONS.MINE: 
 			obj_controller.weapon_selected = WEAPONS.MINE
-			show_debug_message("Mine selected")
+			if(sound)
+			{
+				audio_play_sound(sfx_bomb_equip,1,false)	
+			}
 			break; 
 			
 		}
