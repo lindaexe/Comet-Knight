@@ -2,3 +2,4 @@
 // You can write your code in this editor
 delayNextAttack = false; 
 hasDelayed = true
+image_speed = 1

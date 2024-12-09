@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_trigger_event",
+  "%Name":"obj_trigger_event_alt",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_trigger_event",
+  "name":"obj_trigger_event_alt",
   "overriddenProperties":[],
   "parent":{
     "name":"Meta",
@@ -29,7 +29,6 @@
     {"$GMObjectProperty":"v1","%Name":"oneShot","filters":[],"listItems":[],"multiselect":false,"name":"oneShot","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"distance","filters":[],"listItems":[],"multiselect":false,"name":"distance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"inst_type","filters":[],"listItems":[],"multiselect":false,"name":"inst_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"offTrigger","filters":[],"listItems":[],"multiselect":false,"name":"offTrigger","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

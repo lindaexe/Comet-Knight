@@ -8,6 +8,28 @@ if ( damage_reset_timer >= damage_reset_delay)
 	can_be_damaged = true;
 }
 
+
+
+// check knight hit the place 
+if (  instance_exists(obj_player)  && !delayNextAttack) 
+{
+	var x_delta = abs(x - obj_player.x)
+	var y_delta = abs(y - obj_player.y)
+
+	if (x_delta < 30 && y_delta < 30 )
+	{
+			show_debug_message("hit player")
+		//trigger alarm to delay attack d
+		alarm[0] = game_get_speed(gamespeed_fps) * delayAttackTime
+		image_speed = 0
+		hasDelayed = false
+		delayNextAttack = true
+		path_end()
+	}
+} 
+
+if (hasDelayed)
+{ 
 // check damage collisions 
 if (place_meeting(x,y,obj_parent_damage))
 {
@@ -16,7 +38,7 @@ if (place_meeting(x,y,obj_parent_damage))
 	{
 		// now get the angle of the objec  
 		angle = point_direction(x,y, dmg_obj.x, dmg_obj.y)
-		show_debug_message(angle)
+		
 		var has_been_hit = true
 		if(angle <= 180 - angle_offset  && angle >= 0 + angle_offset && self.facing == ENEMY_FACE.UP) // up case
 		{
@@ -63,10 +85,11 @@ if (place_meeting(x,y,obj_parent_damage))
 		{
 			
 			angle = point_direction(dmg_obj.x, dmg_obj.y, x, y);
+			show_debug_message(angle)
 			// Knockback calculations 
 			knbX = lengthdir_x(knockback_Velocity, angle);
 		    knbY = lengthdir_y(knockback_Velocity, angle);
-
+			
 	
 			var predictedX = x + knbX 
 			var predictedY = y + knbY 
@@ -123,16 +146,134 @@ if (place_meeting(x,y,obj_parent_damage))
 				image_speed = 0 
 				image_index = 0; 
 				flashAlpha = 1 
-				if (dmg_obj.isBullet == true)
+				if (dmg_obj.isBullet == true || dmg_obj == obj_sword_projectile)
 				{
 					instance_destroy(dmg_obj)
 				}
 			}
+			
 		}
 	}
 	
+} // detect if close for manhattan distance travel 
+else if (  instance_exists(obj_player) && 
+point_distance(x,y, obj_player.x, obj_player.y) < 
+	pythagorean_ply_dis &&  (abs(originX - x)   <= rangeX)  ) 
+{
+	knightState = KNIGHT_STATES.CHASE
+	// now start chase
+	show_debug_message("chase")
+	// get the path of the player 
+			path_delete(path)
+			path = path_add()
+			// target 
+			var target = instance_nearest(x,y,obj_player)
+			targetX = target.x
+			targetY = target.y
+			if(target != noone && obj_controller != noone  )
+			{
+				mp_grid_path(obj_controller.grid, path, x,y, targetX, targetY, false)
+				// new path
+				path_start(path, walk_speed, path_action_stop, true)
+				alarm[1] =  game_get_speed( gamespeed_fps) * pathDelay; 
+				// get the next path 
+				
+				var nextX = path_get_x(path,1); 
+				var nextY = path_get_y(path,1);
+				
+				
+				// Calculate the movement deltas
+				var dx = nextX - x; // Change in X
+				var dy = nextY - y; // Change in Y
+
+				// Determine direction based on the axis of movement
+				if ( abs(dx) > abs(dy))
+				{
+				    // Moving horizontally (dominant X-axis)
+				    if (dx > 0)
+					{
+				         self.facing = ENEMY_FACE.RIGHT
+				    }
+					else if (dx < 0)
+					{
+				         self.facing= ENEMY_FACE.LEFT
+				    }
+				} 
+				else 
+				{
+				    // Moving vertically (dominant Y-axis)
+				    if (dy > 0)
+					{
+						self.facing = ENEMY_FACE.DOWN
+				    } else if (dy < 0)
+					{
+				      self.facing = ENEMY_FACE.UP
+				    }
+				}
+			}
+} 
+else if (knightState == KNIGHT_STATES.CHASE)
+{
+	knightState = KNIGHT_STATES.RETURN
 }
-else
+else if(knightState == KNIGHT_STATES.RETURN) // go back to original position
+{
+	// go back to original postion 
+	
+	path_delete(path)
+			path = path_add()
+			// target 
+			var target = instance_nearest(x,y,obj_player)
+			if(target != noone && obj_controller != noone  )
+			{
+				mp_grid_path(obj_controller.grid, path, x,y, originX, originY, false)
+				// new path
+				path_start(path, walk_speed, path_action_stop, true)
+				alarm[1] =  game_get_speed( gamespeed_fps) * pathDelay; 
+				// get the next path 
+				
+				var nextX = path_get_x(path,1); 
+				var nextY = path_get_y(path,1);
+				
+				
+				// Calculate the movement deltas
+				var dx = nextX - x; // Change in X
+				var dy = nextY - y; // Change in Y
+
+				// Determine direction based on the axis of movement
+				if ( abs(dx) > abs(dy))
+				{
+				    // Moving horizontally (dominant X-axis)
+				    if (dx > 0)
+					{
+				         self.facing = ENEMY_FACE.RIGHT
+				    }
+					else if (dx < 0)
+					{
+				         self.facing = ENEMY_FACE.LEFT
+				    }
+				} 
+				else 
+				{
+				    // Moving vertically (dominant Y-axis)
+				    if (dy > 0)
+					{
+						self.facing = ENEMY_FACE.DOWN
+				    } else if (dy < 0)
+					{
+				      self.facing = ENEMY_FACE.UP
+				    }
+				}
+			}
+			
+			if(x == originX && y == originY)
+			{
+				self.knightState = KNIGHT_STATES.PATROL
+			}
+			
+			
+}
+else if( self.knightState == KNIGHT_STATES.PATROL)// patrol mode 
 {
 		// has not hit the player roam the hallway 
 		if ( canMove)
@@ -195,7 +336,7 @@ else
 					self.facing = ENEMY_FACE.DOWN
 					y += 1 * yVelocity
 					// change direction 
-					if( x - originY   > rangeY )
+					if( y - originY   > rangeY )
 					{
 						isup = true
 						alarm[3] = game_get_speed(gamespeed_fps) * idleTime 
@@ -207,6 +348,7 @@ else
 		} 
 }
 }
+} 
 if (flashAlpha > 0)
 {
 	flashAlpha -= 0.05 
