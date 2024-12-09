@@ -8,4 +8,8 @@
 		damage_reset_delay = other.duration * 1000000; // delay till get damaged again
 		audio_play_sound(sfx_hit, 0, false)
 		flashAlpha = 1 
+		if (other.isBullet)
+		{
+			instance_destroy(other)
+		}
 	}

@@ -16,8 +16,8 @@
   "name":"obj_grid_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"goblin",
-    "path":"folders/Objects/enemy/goblin.yy",
+    "name":"skeleton",
+    "path":"folders/Objects/enemy/skeleton.yy",
   },
   "parentObjectId":null,
   "persistent":false,

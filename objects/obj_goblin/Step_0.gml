@@ -9,7 +9,7 @@ if ( damage_reset_timer >= damage_reset_delay)
 }
 
 // code for hurting the goblin
-if ( place_meeting(x, y, obj_parent_damage) ) 
+if ( place_meeting(x, y, obj_parent_damage)  ) 
 {
 
     var damage_item = instance_place(x,y,obj_parent_damage);
@@ -61,12 +61,14 @@ if ( place_meeting(x, y, obj_parent_damage) )
 	
 	knbX *= 0.85 
 	knbY *= 0.85 
+	
 	isHurt = true 
 	alarm[1] = game_get_speed(gamespeed_fps) * delayAttackTime // time they get hurt
 	
 	if (can_be_damaged)
 	{
 		self.hitPoints -= damage_item.damage 
+		
 		can_be_damaged = false; 
 		damage_reset_timer = 0; 
 		damage_reset_delay = damage_item.duration * 1000000; // delay till get damaged again
@@ -74,6 +76,10 @@ if ( place_meeting(x, y, obj_parent_damage) )
 		image_speed = 0 
 		image_index = 0; 
 		flashAlpha = 1 
+		if (damage_item.isBullet == true)
+		{
+			instance_destroy(damage_item)
+		}
 	}
 	
 }  

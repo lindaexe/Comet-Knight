@@ -20,8 +20,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_interface","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"propertyId":{"name":"hitPoints","path":"objects/obj_enemy_interface/obj_enemy_interface.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
   ],
   "parent":{
-    "name":"goblin",
-    "path":"folders/Objects/enemy/goblin.yy",
+    "name":"skeleton",
+    "path":"folders/Objects/enemy/skeleton.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_interface",

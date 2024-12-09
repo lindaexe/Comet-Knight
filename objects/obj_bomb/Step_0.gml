@@ -7,7 +7,7 @@ if(image_index == 4 || image_index == 2)
 
 
 // code for hurting the goblin
-if ( place_meeting(x, y, obj_parent_damage) ) 
+if ( place_meeting(x, y, obj_parent_damage)  ) 
 {
 	
 	alarm[0] = game_get_speed(gamespeed_fps) * 3
@@ -61,8 +61,8 @@ if ( place_meeting(x, y, obj_parent_damage) )
 	}
 	
 	
-	knbX *= 0.85 
-	knbY *= 0.85 
+	knbX *= 0.25
+	knbY *= 0.25 
 
 	
 }
