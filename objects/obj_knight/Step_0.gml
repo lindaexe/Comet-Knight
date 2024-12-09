@@ -216,7 +216,7 @@ else if (knightState == KNIGHT_STATES.CHASE)
 {
 	knightState = KNIGHT_STATES.RETURN
 }
-else if(knightState == KNIGHT_STATES.RETURN) // go back to original position
+else if(knightState == KNIGHT_STATES.RETURN && instance_exists(obj_player)) // go back to original position
 {
 	// go back to original postion 
 	
@@ -273,7 +273,7 @@ else if(knightState == KNIGHT_STATES.RETURN) // go back to original position
 			
 			
 }
-else if( self.knightState == KNIGHT_STATES.PATROL)// patrol mode 
+else if( self.knightState == KNIGHT_STATES.PATROL && instance_exists(obj_player))// patrol mode 
 {
 		// has not hit the player roam the hallway 
 		if ( canMove)

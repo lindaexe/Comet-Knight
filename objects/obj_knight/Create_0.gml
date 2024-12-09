@@ -32,8 +32,14 @@ originX = x
 originY = y 
 
 path  = path_add() 
-
-target_x = obj_player.x 
-target_y = obj_player.y  
-
+if (instance_exists(obj_player))
+{ 
+	target_x = obj_player.x 
+	target_y = obj_player.y  
+}
+else
+{
+	target_x = 0
+	target_y = 0 
+}
 knightState = KNIGHT_STATES.PATROL
