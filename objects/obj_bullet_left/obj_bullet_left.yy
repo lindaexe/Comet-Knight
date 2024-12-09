@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"obj_bullet_left",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"propertyId":{"name":"damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+  ],
   "parent":{
     "name":"player_bullets",
     "path":"folders/Objects/player_bullets.yy",
