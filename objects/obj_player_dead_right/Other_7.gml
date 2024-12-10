@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 instance_destroy(self)
-room_restart();
+//room_restart();

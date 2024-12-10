@@ -19,3 +19,13 @@ for(var i =0; i < ds_list_size(list); i++)
 }
 
 ini_close()
+
+active = true 
+
+with(obj_save_point)
+{
+	if(self != other)
+	{
+		active = false; 
+	}
+}

@@ -112,7 +112,7 @@ if(!can_move){
 // player is dead self destruct
 if(health <=0)
 {
-	
+	obj_save_point.triggerOnce = true
 	self.isDead = true
 	
 	// play death animation 
