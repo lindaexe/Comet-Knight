@@ -15,3 +15,22 @@ if (currRoom == Tutorial && health != 100 && triggerHealthTut)
 	triggerHealthTut = false
 	instance_create_depth(self.x,self.y,0, obj_health_dialog)
 }
+
+if(currRoom == Tutorial && hasTriggerMusic)
+{
+	audio_stop_sound(sfx_music_level_tutorial)
+	audio_play_sound(sfx_music_level_tutorial,3, true)
+	hasTriggerMusic = false
+}
+if(currRoom == Room1 && hasTriggerMusic )
+{
+	audio_stop_sound(sfx_music_level_tutorial)
+	audio_play_sound(sfx_music_level_one,3, true)
+	hasTriggerMusic = false
+}
+else if(currRoom == Level2_main_room && hasTriggerMusic)
+{
+	audio_stop_sound(sfx_music_level_one)
+	audio_play_sound(sfx_music_level_one,3, true)
+	hasTriggerMusic = false
+}

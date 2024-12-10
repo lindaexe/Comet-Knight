@@ -2,3 +2,12 @@
 // You can write your code in this editor
 
 mp_grid_destroy(grid)
+
+if (room == Tutorial)
+{
+	hasTriggerMusic = true
+}
+else if (room == BossRoom)
+{
+	hasTriggerMusic = true
+}
