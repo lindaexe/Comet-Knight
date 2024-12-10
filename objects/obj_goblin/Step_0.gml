@@ -106,25 +106,32 @@ else if (!isHurt)
 				// if player is within range of the origin point if so goblin go and attack them other wise run back
 				if ( rangeX <=  rangeMaxX  && rangeY < 32) 
 				{  
-					// within range follow player along yAxis 
-					if( (enemyX - playerX) < -32 )
-					{
-						// player is right
-						x += 1 * xVelocity 
-						image_speed = 1 
-						face = FACING.RIGHT	
-					}
-					else if ( (enemyX - playerX) > 32 )
-					{
-						// player is left
-						x -= 1 * xVelocity 
-						image_speed = 1
-						face = FACING.LEFT
-					}
-					else
-					{
-						image_index = 0 ;
-						canMove = false
+					// checks if player is behind a wall
+					var canSeePlayer = !collision_line(x, y, playerX, y, obj_collidable, false, true);
+					
+					if (canSeePlayer)
+                    {
+						// within range follow player along yAxis
+						if( (enemyX - playerX) < -32 )
+						{
+						
+							// player is right
+							x += 1 * xVelocity 
+							image_speed = 1 
+							face = FACING.RIGHT	
+						}
+						else if ( (enemyX - playerX) > 32 )
+						{
+							// player is left
+							x -= 1 * xVelocity 
+							image_speed = 1
+							face = FACING.LEFT
+						}
+						else
+						{
+							image_index = 0 ;
+							canMove = false
+						}
 					}
 						
 				}

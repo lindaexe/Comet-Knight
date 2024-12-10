@@ -28,22 +28,26 @@ if (self.fr_shoot && can_shoot)
 		dirY = -1 * bullet_velocity;  
 		dirX = 0; 
 		bullet = instance_create_layer(x ,y + ( -1 * offsetY ) , "Instances", bulletType)
+		bullet.image_angle = 90;
 		break; 
 		case DIRECTION.DOWN:
 		dirY = 1 * bullet_velocity;
 		dirX = 0; 
 		bullet = instance_create_layer(x ,y + offsetY, "Instances", bulletType)
+		bullet.image_angle = 270;
 		break; 
 		case DIRECTION.LEFT: 
 		dirX = -1 * bullet_velocity ; 
 		dirY = 0; 
 		bullet = instance_create_layer(x + ( -1 * offsetX ),y , "Instances", bulletType)
+		bullet.image_angle = 180;
 		break ;
 		case DIRECTION.RIGHT:
 		dirX = 1 * bullet_velocity; 
 		dirY = 0; 
 		bullet = instance_create_layer(x + offsetX,y, "Instances", bulletType)
 		break; 
+		
 	}
 	// sound range 
 	if (distance_to_object(obj_player) < sound_range )
