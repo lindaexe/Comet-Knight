@@ -16,6 +16,7 @@ else if ( obj_controller.key_count >= key_limit)
 	other.y = targetY 
 	show_debug_message(targetRoom)
 	room_goto(targetRoom)
+	obj_controller.key_count = 0; 
 }
 else if ( !notified) 
 {
