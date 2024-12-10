@@ -1,7 +1,6 @@
 
 // When room starts check if this file exists. If so that means load this checkpoint and data! 
 
-
 if (file_exists("checkpoint.ini") && health <= 0)
 {
 	ini_open("checkpoint.ini")
