@@ -1,4 +1,4 @@
-audio_play_sound(mus_menu,1,true);
+
 menu_items = [
     ["Play", 0],
     ["Credits", 1],

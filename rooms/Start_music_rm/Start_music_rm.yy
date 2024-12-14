@@ -1,24 +1,23 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_main_menu",
-  "creationCodeFile":"rooms/rm_main_menu/RoomCreationCode.gml",
+  "%Name":"Start_music_rm",
+  "creationCodeFile":"rooms/Start_music_rm/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_269B6E9B","path":"rooms/rm_main_menu/rm_main_menu.yy",},
-    {"name":"inst_3F879136","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+    {"name":"inst_320633D7_1_1","path":"rooms/Start_music_rm/Start_music_rm.yy",},
+    {"name":"inst_376B3FB_1_1","path":"rooms/Start_music_rm/Start_music_rm.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_269B6E9B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_269B6E9B","objectId":{"name":"obj_game_menu_controller","path":"objects/obj_game_menu_controller/obj_game_menu_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":224.0,},
-        {"$GMRInstance":"v1","%Name":"inst_3F879136","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F879136","objectId":{"name":"obj_menubg","path":"objects/obj_menubg/obj_menubg.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.12446067,"scaleX":1.0000001,"scaleY":0.9999998,"x":687.99994,"y":383.96524,},
+        {"$GMRInstance":"v1","%Name":"inst_320633D7_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_320633D7_1_1","objectId":{"name":"obj_credits_1","path":"objects/obj_credits_1/obj_credits_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":384.0,},
+        {"$GMRInstance":"v1","%Name":"inst_376B3FB_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_376B3FB_1_1","objectId":{"name":"obj_starbg_1","path":"objects/obj_starbg_1/obj_starbg_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":384.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
-    {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
-  "name":"rm_main_menu",
+  "name":"Start_music_rm",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",

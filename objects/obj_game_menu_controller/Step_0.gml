@@ -15,6 +15,9 @@ if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)){
         case 0: 
 			audio_stop_sound(mus_menu);
 			room_goto(Tutorial);
+			// transisition screen
+			
+			
             instance_destroy();
             break;
         case 1:
@@ -49,6 +52,7 @@ for(var i = 0; i < array_length(menu_items); i++) {
         if (mouse_check_button_pressed(mb_left)) {
             switch(menu_items[cursor_pos][1]){
                 case 0: 
+					audio_stop_sound(mus_menu);
                     room_goto(Tutorial);
                     instance_destroy();
                     break;

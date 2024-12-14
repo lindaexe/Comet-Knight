@@ -3,20 +3,30 @@
 
 if ( !self.isLocked ) 
 { 
-	
-	other.x = targetX
-	other.y = targetY 
-	show_debug_message(targetRoom)
-	room_goto(targetRoom)
+
+	// not locked transistion 
+	if(!instance_exists(o_transition))
+	{
+		var inst = instance_create_layer(x,y,"Instances", o_transition) 
+		inst.target_room = targetRoom
+		inst.targetX = targetX
+		inst.targetY = targetY
+	}
 }
 else if ( obj_controller.key_count >= key_limit) 
 {
 	
-	other.x = targetX
-	other.y = targetY 
-	show_debug_message(targetRoom)
-	room_goto(targetRoom)
+	
 	obj_controller.key_count = 0; 
+	notified = true
+	
+	if(!instance_exists(o_transition))
+	{
+		var inst = instance_create_layer(x,y,"Instances", o_transition) 
+		inst.target_room = targetRoom
+		inst.targetX = targetX
+		inst.targetY = targetY 
+	}
 }
 else if ( !notified) 
 {
