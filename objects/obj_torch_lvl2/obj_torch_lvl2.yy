@@ -6,8 +6,8 @@
   "name":"obj_torch_lvl2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inside",
-    "path":"folders/Objects/Environment/Inside.yy",
+    "name":"inside_lvl2",
+    "path":"folders/Objects/Environment/inside_lvl2.yy",
   },
   "parentObjectId":null,
   "persistent":false,

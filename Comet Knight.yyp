@@ -474,6 +474,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Start_music_rm","path":"rooms/Start_music_rm/Start_music_rm.yy",},},
+    {"roomId":{"name":"Credits_End","path":"rooms/Credits_End/Credits_End.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
@@ -483,7 +484,6 @@
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room2_lvl2","path":"rooms/Room2_lvl2/Room2_lvl2.yy",},},
     {"roomId":{"name":"BossRoom","path":"rooms/BossRoom/BossRoom.yy",},},
-    {"roomId":{"name":"Credits_End","path":"rooms/Credits_End/Credits_End.yy",},},
     {"roomId":{"name":"Transition_rm","path":"rooms/Transition_rm/Transition_rm.yy",},},
   ],
   "templateType":"game",
