@@ -41,7 +41,7 @@ if(place_meeting(x,y,obj_enemy_interface) )
 {
 	var obj = instance_place(x,y,obj_enemy_interface) 
 	// player hit by an obstacle and obstacles is in attacking state reduce health / flash 
-	if(!flash && can_move && obj.isObstacle && obj.isAttacking ) // hirt by obstacle
+	if(!flash && can_move && obj.isObstacle && obj.isAttacking) // hirt by obstacle
 	{
 	
 		health -= 20
