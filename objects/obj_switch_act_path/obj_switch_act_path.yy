@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite150",
+    "path":"sprites/Sprite150/Sprite150.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

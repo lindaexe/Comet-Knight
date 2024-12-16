@@ -32,7 +32,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Room_warp","path":"objects/Room_warp/Room_warp.yy",},"propertyId":{"name":"key_limit","path":"objects/Room_warp/Room_warp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Room_warp","path":"objects/Room_warp/Room_warp.yy",},"propertyId":{"name":"targetRoom","path":"objects/Room_warp/Room_warp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Credits_End",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":64.0,},
-      ],"layers":[],"name":"collision_layer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+      ],"layers":[],"name":"collision_layer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRTileLayer":"","%Name":"Roofs_tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Roofs_tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":90,"SerialiseWidth":132,"TileCompressedData":[
           -133,-2147483648,1,129,-82,143,1,144,-48,-2147483648,1,154,-82,-2147483648,1,344,-48,-2147483648,1,154,
           -82,-2147483648,1,344,-48,-2147483648,1,154,-82,-2147483648,1,344,-48,-2147483648,1,154,-82,-2147483648,

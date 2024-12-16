@@ -12,8 +12,9 @@ if place_meeting(x, y, obj_parent_damage)
     // Change state to hurt
     state = SlimeState.HURT;
     
-    instance_destroy(obj_parent_damage);
-    
+    instance_destroy(damage_item);
+    // play sound 
+	audio_play_sound(sfx_slime_hit,3,false)
     if(hp <= 0){
         isDead = true;
         state = SlimeState.DEAD;
@@ -34,9 +35,7 @@ if (place_meeting(x, y, obj_player)) {
     alarm[4] = room_speed * 2;
     
     self.state = SlimeState.IDLE;
-    if (destroy_sound != noone) {
-        audio_play_sound(destroy_sound, 1, false);
-    }
+  
 }
 
 // State machine
