@@ -33,7 +33,14 @@ if(currRoom == Room1 && hasTriggerMusic )
 else if(currRoom == Level2_main_room && hasTriggerMusic)
 {
 	audio_stop_sound(sfx_music_level_one)
-	audio_play_sound(sfx_music_level_one,3, true)
+	audio_play_sound(sfx_music_level_two,3, true)
+	hasTriggerMusic = false
+	key_count = 0; 
+}
+else if (currRoom == BossRoom && hasTriggerMusic)
+{
+	audio_stop_sound(sfx_music_level_two)
+	audio_play_sound(sfx_music_boss,3, true)
 	hasTriggerMusic = false
 	key_count = 0; 
 }

@@ -26,8 +26,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_outside_tiles",
-    "path":"sprites/spr_outside_tiles/spr_outside_tiles.yy",
+    "name":"spr_outside_tiles_2",
+    "path":"sprites/spr_outside_tiles_2/spr_outside_tiles_2.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

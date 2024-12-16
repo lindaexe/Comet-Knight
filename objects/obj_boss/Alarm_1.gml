@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(phase == 1){
-	if(!isAttacking && obj_player.can_move == true){
+	if(!isAttacking && instance_exists(obj_player) && obj_player.can_move == true){
 		var turretDirection = point_direction(x, y, obj_player.x, obj_player.y);
 
 	
@@ -14,7 +14,7 @@ if(phase == 1){
 	alarm[1] = game_get_speed(gamespeed_fps) * 1
 }
 else{
-	if(!isAttacking && obj_player.can_move == true){
+	if(!isAttacking && instance_exists(obj_player) && obj_player.can_move == true){
 		var turretDirection = point_direction(x-96, y, obj_player.x, obj_player.y);
 		var turretDirection1 = point_direction(x+96, y, obj_player.x, obj_player.y);
 		var turretDirection3 = point_direction(x, y, obj_player.x, obj_player.y);

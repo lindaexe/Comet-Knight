@@ -7,7 +7,3 @@ if (room == Tutorial)
 {
 	hasTriggerMusic = true
 }
-else if (room == BossRoom)
-{
-	hasTriggerMusic = true
-}

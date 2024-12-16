@@ -6,3 +6,4 @@ if(!isIgnited){
 	sprite_index = spr_ignited_bomb
 	image_index = 0
 }
+instance_destroy(other)

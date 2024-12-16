@@ -10,8 +10,9 @@
   "managed":true,
   "name":"obj_explosion",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"propertyId":{"name":"damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"25",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"propertyId":{"name":"damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"propertyId":{"name":"isBullet","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_damage","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"propertyId":{"name":"duration","path":"objects/obj_parent_damage/obj_parent_damage.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.50",},
   ],
   "parent":{
     "name":"Weapon",

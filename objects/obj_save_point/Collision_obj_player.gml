@@ -1,7 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-show_debug_message("checkpoint reached")
+/// @description save it
 
 ini_open("checkpoint.ini")
 ini_write_real("player", "x", other.x)

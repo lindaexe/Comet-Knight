@@ -1,10 +1,10 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description Check if player is dead and spawn them
 // create player
 if(    instance_exists(obj_player) == false && triggerOnce && active)
 {
-	var p = instance_create_layer(x,y,"Instances",obj_player)
-	health = 100; 
+	
+	// alarm it 
+	alarm[0] = delay * game_get_speed(  gamespeed_fps) 
+	
 	triggerOnce = false; 
 }
